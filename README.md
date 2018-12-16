@@ -57,8 +57,8 @@ OPTIONS:
 
 # Required setup
 
-* Python 2.7
-* Use install.py        (for installing all dependencies and libraries on linux)
+* Python 2.7            Download latest version from here: [python.org](https://www.python.org/downloads/)
+* Use install.py        For installing all dependencies and libraries
 
 
 
@@ -74,24 +74,45 @@ Let's Begin !!
 
 
 
-### Setting up the enviornment
+### Setting up the environment (Linux Operating System)
 
-Step 1 - cloning ReconSpider on your system.
+Step 1 - cloning ReconSpider on your linux system.
 
-In order to install ReconSpider simply clone the github repository. Below is the command which you can use in order to clone ReconSpider repository.
+In order to download ReconSpider simply clone the github repository. Below is the command which you can use in order to clone ReconSpider repository.
 ```
 git clone https://github.com/bhavsec/reconspider.git
 ```
 
 
-Step 2 - Downloading and Installing all dependencies.
+Step 2 - Installing all dependencies.
 
-Once you clone, you will find directory name as reconspider. Just go to that directory and install dependencies. If you are using ReconSpider on windows then run install_linux.py file and if you are using linux then run install_linux.py
+Once you clone, you will find directory name as **reconspider**. Just go to that directory and install dependencies. If you are using ReconSpider on windows then run install_linux.py file and if you are using linux then run install_linux.py
 ```
 python install.py
 ```
 
 
+
+### Setting up the environment (Windows Operating System)
+
+Step 1 - Downloading ReconSpider on your windows system.
+
+In order to download ReconSpider from github repository simply copy and paste this URL in your favourite browser.
+```
+https://github.com/bhavsec/reconspider/archive/master.zip
+```
+
+Step 2 - Unzipping the file
+
+Once you download, you will find zipped file name as **datasploit-master.zip**. Just right click on that zipped file and unzip the file using any software like [WinZip](https://www.winzip.com/), [WinRAR](https://www.win-rar.com).
+
+
+Step 2 - Installing all dependencies.
+
+After unzipping, go to that directory using Command Prompt and type the following command.
+```
+python install.py
+```
 
 ### Generating and adding API Keys
 
