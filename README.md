@@ -4,7 +4,7 @@ ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan 
 
 
 
-# ReconSpider Documentation (beta)
+# Version (beta)
 
 	File Name     :     README
 	Developer     :     @bhavsec
