@@ -43,3 +43,4 @@ def fetchData(email_id):
         print "\n-------------------------------------------------\n"
 
         print perDetail(email_id)
+        

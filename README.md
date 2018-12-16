@@ -3,7 +3,9 @@
 ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan on email/domain/ip_address/organization. ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data. ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters and Cyber Crime Investigators to find deep information about their target.
 
 
+
 # ReconSpider Documentation (beta)
+
 	File Name     :     README
 	Developer     :     @bhavsec
 	Version       :     0.0.1
@@ -11,8 +13,8 @@ ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan 
 
 
 
-
 # Overview of the tool:
+
 * Performs OSINT on a Domain / Email / IP Address and find out information from different sources.
 * Correlates and collaborate the results, show them in a consolidated manner. 
 * Use specific script / launch automated OSINT for consolidated data.
@@ -20,16 +22,18 @@ ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan 
 
 
 
-
 # Licenses information
+
 ReconSpider and its documents are covered with GPL-3.0 (General Public License v3.0)
 
 
+
 ## Using ReconSpider
+
 ```
 __________                               _________       __     ___            
 \______   \ ____   ____  ____   ____    /   _____/_____ |__| __| _/___________ 
- |       _// __ \_/ ___\/  _ \ /    \   \_____  \\\____ \|  |/ __ |/ __ \_  __ \\
+ |       _// __ \_/ ___\/  _ \ /    \   \_____  \\____ \|  |/ __ |/ __ \_  __ \
  |    |   \  ___/\  \__(  <_> )   |  \  /        \  |_> >  / /_/ \  ___/|  | \/
  |____|_  /\___  >\___  >____/|___|  / /_______  /   __/|__\____ |\___  >__|   
         \/     \/     \/           \/          \/|__|           \/    \/       
@@ -52,19 +56,9 @@ OPTIONS:
 
 
 # Required setup
+
 * Python 2.7
 * Use install.py        (for installing all dependencies and libraries on linux)
-
-
-
-
-# Developer
-    Name                BhavKaran Singh Chahal
-    Twitter:            @bhavsec
-    Facebook:           fb.com/Mr.BhavKaran
-    LinkedIn:           linkedin.com/in/bhav
-    Website:            bhavkaran.com
-
 
 
 
@@ -79,6 +73,8 @@ Installing and using ReconSpider is very easy. Installation process is very simp
 
 Let's Begin !!
 
+
+
 ### Setting up the enviornment
 
 Step 1 - Download ReconSpider on your system.
@@ -88,6 +84,7 @@ In order to install ReconSpider simply clone the github repository. Below is the
 git clone https://github.com/bhavsec/reconspider.git
 ```
 
+
 Step 2 - Downloading and Installing dependencies.
 
 Once you clone, you will find directory name as reconspider. Just go to that directory and install dependencies. If you are using ReconSpider on windows then run install_linux.py file and if you are using linux then run install_linux.py
@@ -95,14 +92,16 @@ Once you clone, you will find directory name as reconspider. Just go to that dir
 python install.py
 ```
 
-### Generating API Keys
 
+
+### Generating API Keys
 
 We need some API Keys before using this tool. Following are the API's which we are using in this tool for a time being.
 
 1. Shodan API
 2. Clearbit API
 3. Fullcontact API
+
 
 
 **Shodan API**
@@ -114,11 +113,13 @@ Copy that key and paste inside config.py file in modules directory.
 (free account: basic search capabilities. Premium account with full access is a one-time payment of $50 and pretty worth it)
 
 
+
 **Clearbit API**
 
 Register yourself at [Clearbit](https://dashboard.clearbit.com/signup) and activate your account.
 Once you login, [Click here](https://dashboard.clearbit.com/api) to get API Key.
 Copy secret API key and paste inside config.py file in modules directory.
+
 
 
 **FullContact API**
@@ -131,8 +132,63 @@ Click on [+ Generate New API Key] button and copy that key and paste it inside c
 
 
 
+# Developer
+
+    Name                BhavKaran Singh Chahal
+    Twitter:            @bhavsec
+    Facebook:           fb.com/Mr.BhavKaran
+    LinkedIn:           linkedin.com/in/bhav
+    Website:            bhavkaran.com
+
+
 
 # Note
 ```
 Currently project is in developement phase and lot of work is going on. Custom error handling is also not implemented, and all the focus is to create required functionality. 
+```
+
+# Usage 
+
+
+ReconSpy is very handy tool and easy to use. All you have to do is just have to pass values to parameter. 
+In order to start ReconSpider just type:
+```
+python reconspider.py
+```
+
+**--ip**
+
+This feature gathers all the information of given IP Address from public sources.
+```
+python reconspider.py  --ip 8.8.8.8
+```
+
+**--url**
+
+This feature gathers all the information of given URL Address from public sources and give you in depth-information of IP address, country, city, organization, ISP, open ports and so more.
+``` 
+python reconspider.py  --url bhavkaran.com 
+```
+
+**--whois**
+
+This feature allows you to search for domain name availability and WHOIS information including name, organisation, address, city, country, zipcode, registrar, name servers etc.
+```
+python reconspider.py  --whois bhavkaran.com
+```
+
+**--email**
+
+This feature gathers information about given email address from various public sources including personal details, location, employment details, social accounts and so more.
+
+```
+python reconspider.py  --email bhavchahal97@gmail.com
+```
+
+**--domain**
+
+This feature give you in depth-information about particular domain including locations, description, emails, employees and so more.
+
+```
+python reconspider.py  --domain google.com
 ```

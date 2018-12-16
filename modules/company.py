@@ -22,4 +22,3 @@ def comDetail(domain):
             print "No information"
     except:
         print "Try Again"
-
