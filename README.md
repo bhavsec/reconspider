@@ -68,8 +68,7 @@ Installing and using ReconSpider is very easy. Installation process is very simp
 
 1. Downloading or cloning ReconSpider github repository.
 2. Downloading and installing all dependencies.
-3. Change config.py file
-4. Generating and adding API Keys in config file
+3. Generating and adding API Keys in config file
 
 Let's Begin !!
 
@@ -92,10 +91,7 @@ Once you clone, you will find directory name as reconspider. Just go to that dir
 python install.py
 ```
 
-Step 3 - Change **config_sample.py** file to **config.py**
-```
-mv config_sample.py config.py
-```
+
 
 ### Generating and adding API Keys
 

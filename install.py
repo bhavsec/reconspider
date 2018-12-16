@@ -10,6 +10,7 @@ if (platform.system() != "Windows"):
     os.system('pip install requests')
     os.system('pip install sslscan')
     os.system('pip install pythonwhois')
+    os.system('mv modules/config_sample.py modules/config.py')
 else:
     os.system('C:\Python27\Scripts\pip install clearbit')
     os.system('C:\Python27\Scripts\pip install shodan')
