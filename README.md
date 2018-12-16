@@ -68,8 +68,8 @@ Installing and using ReconSpider is very easy. Installation process is very simp
 
 1. Downloading or cloning ReconSpider github repository.
 2. Downloading and installing all dependencies.
-3. Generating API Keys
-4. Adding API Keys in config file
+3. Change config.py file
+4. Generating and adding API Keys in config file
 
 Let's Begin !!
 
@@ -77,7 +77,7 @@ Let's Begin !!
 
 ### Setting up the enviornment
 
-Step 1 - Download ReconSpider on your system.
+Step 1 - cloning ReconSpider on your system.
 
 In order to install ReconSpider simply clone the github repository. Below is the command which you can use in order to clone ReconSpider repository.
 ```
@@ -85,16 +85,19 @@ git clone https://github.com/bhavsec/reconspider.git
 ```
 
 
-Step 2 - Downloading and Installing dependencies.
+Step 2 - Downloading and Installing all dependencies.
 
 Once you clone, you will find directory name as reconspider. Just go to that directory and install dependencies. If you are using ReconSpider on windows then run install_linux.py file and if you are using linux then run install_linux.py
 ```
 python install.py
 ```
 
+Step 3 - Change **config_sample.py** file to **config.py**
+```
+mv config_sample.py config.py
+```
 
-
-### Generating API Keys
+### Generating and adding API Keys
 
 We need some API Keys before using this tool. Following are the API's which we are using in this tool for a time being.
 
@@ -142,11 +145,6 @@ Click on [+ Generate New API Key] button and copy that key and paste it inside c
 
 
 
-# Note
-```
-Currently project is in developement phase and lot of work is going on. Custom error handling is also not implemented, and all the focus is to create required functionality. 
-```
-
 # Usage 
 
 
@@ -167,14 +165,14 @@ python reconspider.py  --ip 8.8.8.8
 
 This feature gathers all the information of given URL Address from public sources and give you in depth-information of IP address, country, city, organization, ISP, open ports and so more.
 ``` 
-python reconspider.py  --url bhavkaran.com 
+python reconspider.py  --url google.com 
 ```
 
 **--whois**
 
 This feature allows you to search for domain name availability and WHOIS information including name, organisation, address, city, country, zipcode, registrar, name servers etc.
 ```
-python reconspider.py  --whois bhavkaran.com
+python reconspider.py  --whois google.com
 ```
 
 **--email**
@@ -182,7 +180,7 @@ python reconspider.py  --whois bhavkaran.com
 This feature gathers information about given email address from various public sources including personal details, location, employment details, social accounts and so more.
 
 ```
-python reconspider.py  --email bhavchahal97@gmail.com
+python reconspider.py  --email bill.gates@microsoft.com
 ```
 
 **--domain**
@@ -191,4 +189,11 @@ This feature give you in depth-information about particular domain including loc
 
 ```
 python reconspider.py  --domain google.com
+```
+
+
+
+# Note
+```
+Currently project is in developement phase and lot of work is going on. Custom error handling is also not implemented, and all the focus is to create required functionality. 
 ```
