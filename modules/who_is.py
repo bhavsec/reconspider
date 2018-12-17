@@ -7,7 +7,7 @@ def domWhois(WH):
         w = whois.whois(WH)
         print "\n-------------------------------------------------\n"
         print "[+] Gathering WHOIS Information...\n"
-        print "Domain Name: ------> "+str(w.domain_name[0])
+        print "Domain Name: ------> "+str(w['domain_name'])
         print "Name: -------------> "+str(w['name'])
         print "Organisation: -----> "+str(w['org'])
         print "Address: ----------> "+str(w['address'])

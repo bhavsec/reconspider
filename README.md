@@ -22,9 +22,19 @@ ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan 
 
 
 
-# Licenses information
+# Mind Map (v1)
 
-ReconSpider and its documents are covered with GPL-3.0 (General Public License v3.0)
+Check out our mind map to see visually organize information of this tool regarding api, services and techniques and more.
+```
+http://reconspider.com/mindmap.html
+```
+
+
+
+# Licenses information
+```
+ReconSpider and its documents are covered under GPL-3.0 (General Public License v3.0)
+```
 
 
 
@@ -127,9 +137,11 @@ We need some API Keys before using this tool. Following are the API's which we a
 **Shodan API**
 
 Register yourself at [Shodan](https://account.shodan.io/register) and activate your account.
-Once you login, [Click here](https://account.shodan.io/) to get API Key.
-Copy that key and paste inside config.py file in modules directory.
-
+Once you login, [Click here](https://account.shodan.io/) to get API Key & copy that key.
+Run install.py and paste that key in following field when installer asks.
+```
+Enter your Shodan API Key: 
+```
 (free account: basic search capabilities. Premium account with full access is a one-time payment of $50 and pretty worth it)
 
 
@@ -137,16 +149,22 @@ Copy that key and paste inside config.py file in modules directory.
 **Clearbit API**
 
 Register yourself at [Clearbit](https://dashboard.clearbit.com/signup) and activate your account.
-Once you login, [Click here](https://dashboard.clearbit.com/api) to get API Key.
-Copy secret API key and paste inside config.py file in modules directory.
+Once you login, [Click here](https://dashboard.clearbit.com/api) to get API Key & copy that key.
+Paste that key in following field after Entering **Shodan API Key**.
+```
+Enter your Clearbit API Key: 
+```
 
 
 
 **FullContact API**
 
 Register yourself at [Full Contact](https://www.fullcontact.com/developer/)  and activate your account.
-Once you login, [Click here](https://dashboard.fullcontact.com/) to get API Key.
-Click on [+ Generate New API Key] button and copy that key and paste it inside config.py file in modules directory.
+Once you login, [Click here](https://dashboard.fullcontact.com/) & press [+ Generate New API Key] button and copy that key.
+Paste that key in following field right after after Entering **Clearbit API Key**.
+```
+Enter your Full Contact API Key: 
+```
 
 (free account: 500 Person and Company matches per month, and 60 queries per minute)
 
@@ -154,7 +172,7 @@ Click on [+ Generate New API Key] button and copy that key and paste it inside c
 
 # Developer
 
-    Name                BhavKaran Singh Chahal
+    Name                BhavKaran
     Twitter:            @bhavsec
     Facebook:           fb.com/Mr.BhavKaran
     LinkedIn:           linkedin.com/in/bhav
