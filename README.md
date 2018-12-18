@@ -1,6 +1,6 @@
 # ReconSpider
 
-ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan on email/domain/ip_address/organization. ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data. ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters and Cyber Crime Investigators to find deep information about their target.
+ReconSpider is a powerful tool which can be used to perform Open Source Intelligence (OSINT) scan on email/domain/ip_address/organization. ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data. ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters and Cyber Crime Investigators to find deep information about their target.
 
 
 
