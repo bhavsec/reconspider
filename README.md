@@ -159,7 +159,7 @@ Enter your Clearbit API Key:
 
 **FullContact API**
 
-Register yourself at [Full Contact](https://www.fullcontact.com/developer/)  and activate your account.
+Register yourself at [Full Contact](https://dashboard.fullcontact.com/register)  and activate your account.
 Once you login, [Click here](https://dashboard.fullcontact.com/) & press [+ Generate New API Key] button and copy that key.
 Paste that key in following field right after after Entering **Clearbit API Key**.
 ```
