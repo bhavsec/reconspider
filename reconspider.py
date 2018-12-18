@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from main import argparse
 
 
@@ -13,7 +14,7 @@ __________                               _________       __     ___
                       developer: https://bhavkaran.com
 
 
-usage: reconspider.py [OPTIONS]
+usage: python reconspider.py [OPTIONS]
 
 OPTIONS:
 

@@ -10,13 +10,13 @@ def comDetail(domain):
         if company != None:
             print "\n-------------------------------------------------\n"
             print "[+] Gathering Company Information from [clearbit]...\n"
-            print "Location             : "+str(company['name'])
-            print "Domain Name          : "+str(company['domain'])
-            print "Description          : "+str(company['description'])
-            print "Location             : "+str(company['location'])
-            print "EmailAddress         : "+str(company['site']['emailAddresses'])
-            print "Number of Employees  : "+str(company['metrics']['employees'])
-            print "Contact Number       : "+str(company['phone'])
+            print "Location-------------> "+str(company['name'])
+            print "Domain Name----------> "+str(company['domain'])
+            print "Description----------> "+str(company['description'])
+            print "Location-------------> "+str(company['location'])
+            print "Email Address--------> "+str(company['site']['emailAddresses'])
+            print "Number of Employees--> "+str(company['metrics']['employees'])
+            print "Contact Number-------> "+str(company['phone'])
 
         else:
             print "No information"

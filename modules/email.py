@@ -10,7 +10,7 @@ def fetchData(email_id):
     data = person.json()
     try:
         print "\n-------------------------------------------------\n"
-        print "[+] Gathering Personal Information from [FullContact]\n"
+        print "[+] Gathering Personal Details from [FullContact]\n"
         print "Full Name: ----> "+data['contactInfo']['fullName']
         print "Gender: -------> "+str(data['demographics']['gender'])
         print "State: --------> "+str(data['demographics']['locationDeduced']['state']['name'])
