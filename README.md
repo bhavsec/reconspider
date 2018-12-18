@@ -98,6 +98,7 @@ Step 2 - Installing all dependencies.
 
 Once you clone, you will find directory name as **reconspider**. Just go to that directory and install dependencies. If you are using ReconSpider on windows then run install_linux.py file and if you are using linux then run install_linux.py
 ```
+cd reconspider
 python install.py
 ```
 
