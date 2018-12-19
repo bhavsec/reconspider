@@ -106,3 +106,6 @@ venv.bak/
 
 # modules
 modules/config.py
+
+# vscode settings
+.vscode/

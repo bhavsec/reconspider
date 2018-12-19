@@ -1,4 +1,4 @@
-from modules import *
+from modules import ipEnum, domEnum, domWhois, comDetail, fetchData, socket
 import argparse
 parser = argparse.ArgumentParser()
 

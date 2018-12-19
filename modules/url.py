@@ -1,5 +1,4 @@
-import shodan
-import socket
+import shodan, socket
 from config import shodan_api
 api = shodan.Shodan(shodan_api)
 

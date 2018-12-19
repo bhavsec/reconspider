@@ -1,8 +1,5 @@
 from config import clearbit_api
-import requests
-import json
-import clearbit
-import os
+import requests, json, clearbit, os
 clearbit.key=clearbit_api
 
 def perDetail(email_id):

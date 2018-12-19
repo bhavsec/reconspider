@@ -1,5 +1,4 @@
-import sys
-import whois
+import sys, whois
 
 
 def domWhois(WH):

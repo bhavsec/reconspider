@@ -1,7 +1,10 @@
 # ReconSpider
 
-ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan on email/domain/ip_address/organization. ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data. ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters and Cyber Crime Investigators to find deep information about their target.
+ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan on IP Address, Emails, Websites, Organizations.
 
+ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters and Cyber Crime Investigators to find deep information about their target.
+
+ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data.
 
 
 # Version (beta)
@@ -51,7 +54,7 @@ __________                               _________       __     ___
                       developer: https://bhavkaran.com
 
 
-usage: reconspider.py [OPTIONS]
+usage: python reconspider.py [OPTIONS]
 
 OPTIONS:
 
@@ -121,6 +124,7 @@ Step 2 - Installing all dependencies.
 
 After unzipping, go to that directory using Command Prompt and type the following command.
 ```
+cd reconspider
 python install.py
 ```
 
@@ -152,14 +156,14 @@ Register yourself at [Clearbit](https://dashboard.clearbit.com/signup) and activ
 Once you login, [Click here](https://dashboard.clearbit.com/api) to get API Key & copy that key.
 Paste that key in following field after Entering **Shodan API Key**.
 ```
-Enter your Clearbit API Key: 
+Enter your Clearbit Secret API Key: 
 ```
 
 
 
 **FullContact API**
 
-Register yourself at [Full Contact](https://www.fullcontact.com/developer/)  and activate your account.
+Register yourself at [Full Contact](https://dashboard.fullcontact.com/register) and activate your account.
 Once you login, [Click here](https://dashboard.fullcontact.com/) & press [+ Generate New API Key] button and copy that key.
 Paste that key in following field right after after Entering **Clearbit API Key**.
 ```
@@ -191,28 +195,28 @@ python reconspider.py
 
 **--ip**
 
-This feature gathers all the information of given IP Address from public sources.
+This option gathers all the information of given IP Address from public sources.
 ```
 python reconspider.py  --ip 8.8.8.8
 ```
 
 **--url**
 
-This feature gathers all the information of given URL Address from public sources and give you in depth-information of IP address, country, city, organization, ISP, open ports and so more.
+This option gathers all the information of given URL Address from public sources and give you in depth-information of IP address, country, city, organization, ISP, open ports and so more.
 ``` 
 python reconspider.py  --url google.com 
 ```
 
 **--whois**
 
-This feature allows you to search for domain name availability and WHOIS information including name, organisation, address, city, country, zipcode, registrar, name servers etc.
+This option allows you to search for domain name availability and WHOIS information including name, organisation, address, city, country, zipcode, registrar, name servers etc.
 ```
 python reconspider.py  --whois google.com
 ```
 
 **--email**
 
-This feature gathers information about given email address from various public sources including personal details, location, employment details, social accounts and so more.
+This option gathers information about given email address from various public sources including personal details, location, employment details, social accounts and so more.
 
 ```
 python reconspider.py  --email bill.gates@microsoft.com
@@ -220,7 +224,7 @@ python reconspider.py  --email bill.gates@microsoft.com
 
 **--domain**
 
-This feature give you in depth-information about particular domain including locations, description, emails, employees and so more.
+This option give you in depth-information about particular domain including locations, description, emails, employees and so more.
 
 ```
 python reconspider.py  --domain google.com
