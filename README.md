@@ -99,8 +99,9 @@ git clone https://github.com/bhavsec/reconspider.git
 
 Step 2 - Installing all dependencies.
 
-Once you clone, you will find directory name as **reconspider**. Just go to that directory and install dependencies. If you are using ReconSpider on windows then run install_linux.py file and if you are using linux then run install_linux.py
+Once you clone, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
 ```
+cd reconspider
 python install.py
 ```
 
@@ -124,7 +125,6 @@ Step 2 - Installing all dependencies.
 
 After unzipping, go to that directory using Command Prompt and type the following command.
 ```
-cd reconspider
 python install.py
 ```
 
