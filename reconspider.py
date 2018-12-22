@@ -13,7 +13,7 @@ __________                               _________       __     ___
                       developer: https://bhavkaran.com
 
 
-usage: python python reconspider.py [OPTIONS]
+usage: python reconspider.py [OPTIONS]
 
 OPTIONS:
 
