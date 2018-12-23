@@ -4,7 +4,7 @@
 
 # ReconSpider
 
-ReconSpider is a powerful tool to perform Open Source Intelligence (OSINT) scan on IP Address, Emails, Websites, Organizations.
+ReconSpider is most advanced Open Source Intelligence (OSINT) Framework for scanning IP Address, Emails, Websites, Organizations and find out information from different sources.
 
 ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters and Cyber Crime Investigators to find deep information about their target.
 
@@ -22,10 +22,10 @@ ReconSpider aggregate all the raw data, visualize it on a dashboard and facilita
 
 # Overview of the tool:
 
-* Performs OSINT on a Domain / Email / IP Address and find out information from different sources.
+* Performs OSINT scan on a IP Address, Emails, Websites, Organizations and find out information from different sources.
 * Correlates and collaborate the results, show them in a consolidated manner. 
 * Use specific script / launch automated OSINT for consolidated data.
-* Currently Available in only Console.
+* Currently available in only Command Line Interface (CLI).
 
 
 
@@ -85,7 +85,7 @@ Installing and using ReconSpider is very easy. Installation process is very simp
 
 1. Downloading or cloning ReconSpider github repository.
 2. Downloading and installing all dependencies.
-3. Generating and adding API Keys in config file
+3. Adding API Keys in install.py
 
 Let's Begin !!
 
@@ -191,7 +191,7 @@ Enter your Full Contact API Key:
 # Usage 
 
 
-ReconSpy is very handy tool and easy to use. All you have to do is just have to pass values to parameter. 
+ReconSpider is very handy tool and easy to use. All you have to do is just have to pass values to parameter. 
 In order to start ReconSpider just type:
 ```
 python reconspider.py
