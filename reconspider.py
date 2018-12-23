@@ -1,5 +1,6 @@
 from main import argparse
-
+from modules import config
+import sys
 
 def banner():
     print """
@@ -26,5 +27,8 @@ OPTIONS:
   --help                Show this help message and exit.
     """
 
-
-banner()
+# Checking if api keys are empty or not
+if (len(config.shodan_api) < 5 or len(config.clearbit_api) < 5 or len(config.fullcontact_api) < 5):
+    sys.exit("\n---------------Your Api keys are empty please ReRun the install.py file---------------\n")
+else:
+    banner()
