@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider"></a>
+  <a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider height="200" width="200""></a>
 </h1>
 
 # ReconSpider
