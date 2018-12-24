@@ -16,9 +16,16 @@ if args.ip:
     exit()
 
 if args.url:
-    DM=socket.gethostbyname(args.url)
-    domEnum(DM)
-    exit()
+    u = str(args.url)
+    if ('http' in u or 'https' in u):
+        u = u.split('//')
+        DM=socket.gethostbyname(u[1])
+        domEnum(DM)
+        exit()
+    else:
+        DM=socket.gethostbyname(args.url)
+        domEnum(DM)
+        exit()
 
 if args.whois:
     WH=args.whois
