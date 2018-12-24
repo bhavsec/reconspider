@@ -30,6 +30,7 @@ ReconSpider aggregate all the raw data, visualize it on a dashboard and facilita
 10. [Setting up the environment using (Termux) in Android](https://github.com/bhavsec/reconspider#setting-up-the-environment-using-termux-in-android)
 11. [Adding API Keys](https://github.com/bhavsec/reconspider#adding-api-keys)
 12. [Usage](https://github.com/bhavsec/reconspider#usage)
+13. [Note](https://github.com/bhavsec/reconspider#note )
 
 
 
@@ -176,7 +177,7 @@ Step 3 - Installing all dependencies.
 Once you clone, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
 ```
 cd reconspider
-python install.py
+python termux_install.py
 ```
 
 
