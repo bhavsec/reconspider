@@ -12,7 +12,7 @@ def exec_api_win():
 
 if sys.version_info[0] > 2:
     if (platform.system() != "Windows"):
-        os.system('sudo apt-get install python-pip3')
+        os.system('sudo apt-get -y install python3-pip')
         os.system('sudo pip3 install python-whois clearbit shodan fullcontact.py requests')
         exec_api_linux()
     else:
