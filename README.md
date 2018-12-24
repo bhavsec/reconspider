@@ -1,6 +1,10 @@
 <h1 align="center">
-  <a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider height="200" width="200""></a>
+	<a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider 		height="200" width="200""></a>
 </h1>
+<h4 align="center"> Most advanced Open Source Intelligence (OSINT) Framework </h4>
+<p align="center">
+	<img src="https://img.shields.io/badge/release-1.0.2%20(beta)-blue.svg">
+</p>
 
 # ReconSpider
 
@@ -11,12 +15,29 @@ ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters
 ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data.
 
 
+
+# Table Of Contents
+
+1. [Version (beta)](https://github.com/bhavsec/reconspider#version-beta)
+2. [Overview of the tool](https://github.com/bhavsec/reconspider#overview-of-the-tool)
+3. [Mind Map (v1)](https://github.com/bhavsec/reconspider#mind-map-v1)
+4. [License Information](https://github.com/bhavsec/reconspider#license-information)
+5. [ReconSpider Banner](https://github.com/bhavsec/reconspider#reconspider-banner)
+6. [Required Setup](https://github.com/bhavsec/reconspider#required-setup)
+7. [Documentation](https://github.com/bhavsec/reconspider#documentation)
+8. [Setting up the environment (Linux Operating System)](https://github.com/bhavsec/reconspider#setting-up-the-environment-linux-operating-system)
+9. [Setting up the environment (Windows Operating System)](https://github.com/bhavsec/reconspider#setting-up-the-environment-windows-operating-system)
+10. [Setting up the environment using (Termux) in Android](https://github.com/bhavsec/reconspider#setting-up-the-environment-using-termux-in-android)
+11. [Adding API Keys](https://github.com/bhavsec/reconspider#adding-api-keys)
+12. [Usage](https://github.com/bhavsec/reconspider#usage)
+
+
+
 # Version (beta)
 
-	File Name     :     README
-	Developer     :     @bhavsec
-	Version       :     0.0.1
-	Website       :     reconspider.com
+  	ReconSpider   :     1.0.2
+  	Python        :     3.7.1
+  	Website       :     reconspider.com
 
 
 
@@ -38,14 +59,14 @@ http://reconspider.com/mindmap.html
 
 
 
-# Licenses information
+# License Information
 ```
 ReconSpider and its documents are covered under GPL-3.0 (General Public License v3.0)
 ```
 
 
 
-## Using ReconSpider
+## ReconSpider Banner
 
 ```
 __________                               _________       __     ___            
@@ -72,9 +93,9 @@ OPTIONS:
 
 
 
-# Required setup
+# Required Setup
 
-* Python 2.7            Download latest version from here: [python.org](https://www.python.org/downloads/)
+* Python 3.7            Download latest version from here: [python.org](https://www.python.org/downloads/)
 * Use install.py        For installing all dependencies and libraries
 
 
@@ -93,7 +114,7 @@ Let's Begin !!
 
 ### Setting up the environment (Linux Operating System)
 
-Step 1 - cloning ReconSpider on your linux system.
+Step 1 - Cloning ReconSpider on your linux system.
 
 In order to download ReconSpider simply clone the github repository. Below is the command which you can use in order to clone ReconSpider repository.
 ```
@@ -132,7 +153,34 @@ After unzipping, go to that directory using Command Prompt and type the followin
 python install.py
 ```
 
-### Generating and adding API Keys
+
+
+### Setting up the environment using (Termux) in Android
+
+Step 1 - Cloning ReconSpider on your Termux in Android operating system.
+
+In order to download ReconSpider from github you need to install git package using this command.
+```
+pkg install git
+```
+
+
+Step 2 - After installing git package, Simply clone the github repository. Below is the command which you can use in order to clone ReconSpider repository.
+```
+git clone https://github.com/bhavsec/reconspider.git
+```
+
+
+Step 3 - Installing all dependencies.
+
+Once you clone, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
+```
+cd reconspider
+python install.py
+```
+
+
+### Adding API Keys
 
 We need some API Keys before using this tool. Following are the API's which we are using in this tool for a time being.
 

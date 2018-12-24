@@ -2,8 +2,15 @@ from main import argparse
 from modules import config
 import sys
 
+if sys.version_info[0] < 3:
+    print(("\nYour System Python Version "+ str(sys.version_info[0]) + " isn't compatible with ReconSpider. Use Python 3.7"))
+    sys.exit()
+else:
+    pass
+
+
 def banner():
-    print """
+    print("""
 __________                               _________       __     ___            
 \______   \ ____   ____  ____   ____    /   _____/_____ |__| __| _/___________ 
  |       _// __ \_/ ___\/  _ \ /    \   \_____  \\\____ \|  |/ __ |/ __ \_  __ \\
@@ -25,10 +32,10 @@ OPTIONS:
   --email               Gather information from email address.
   --domain              Gather detail of website or organization.
   --help                Show this help message and exit.
-    """
+    """)
 
 # Checking if api keys are empty or not
 if (len(config.shodan_api) < 5 or len(config.clearbit_api) < 5 or len(config.fullcontact_api) < 5):
-    sys.exit("\n---------------Your Api keys are empty please ReRun the install.py file---------------\n")
+    sys.exit("\n---------------YOUR API KEYS ARE EMPTY, PLESE RE-INSTALL USING INSTALL.PY ---------------\n")
 else:
     banner()
