@@ -3,7 +3,7 @@
 </h1>
 <h4 align="center"> Most advanced Open Source Intelligence (OSINT) Framework </h4>
 <p align="center">
-	<img src="https://img.shields.io/badge/release-1.0.2%20(beta)-blue.svg">
+	<img src="https://img.shields.io/badge/release-1.0.5%20(beta)-blue.svg">
 </p>
 
 # ReconSpider
