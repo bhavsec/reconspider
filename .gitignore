@@ -105,7 +105,7 @@ venv.bak/
 .mypy_cache/
 
 # modules
-modules/config.py
+core/config.py
 
 # vscode settings
 .vscode/
