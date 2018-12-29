@@ -187,8 +187,6 @@ python reconspider.py
 This option gathers all the information of given IP Address from public resources.
 ```
 ReconSpider >> 1
-```
-```
 IP >> 8.8.8.8
 ```
 
@@ -197,8 +195,6 @@ IP >> 8.8.8.8
 This option gathers all the information of given URL Address from public sources and give you in depth-information of IP address, country, city, organization, ISP, open ports and so more.
 ```
 ReconSpider >> 2
-```
-```
 URL >> vulnweb.com
 ```
 
@@ -207,8 +203,6 @@ URL >> vulnweb.com
 This option allows you to search for domain name availability and WHOIS information including name, organisation, address, city, country, zipcode, registrar, name servers etc.
 ```
 ReconSpider >> 3
-```
-```
 WHOIS (URL) >> google.com
 ```
 
@@ -217,8 +211,6 @@ WHOIS (URL) >> google.com
 This option allows you to map an organizations attack surface with a virtual DNS Map of the DNS records associated with the target organization.
 ```
 ReconSpider >> 4
-```
-```
 DNS MAP (URL) >> vulnweb.com
 ```
 
@@ -227,8 +219,6 @@ DNS MAP (URL) >> vulnweb.com
 This option allows you to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics.
 ```
 ReconSpider >> 5
-```
-```
 PORT SCAN (URL / IP) >> vulnweb.com
 ```
 
@@ -237,8 +227,6 @@ PORT SCAN (URL / IP) >> vulnweb.com
 This option allows you to obtain information about internet servers. It finds name server information for domains by querying the Domain Name System.
 ```
 ReconSpider >> 6
-```
-```
 NS LOOKUP (URL) >> google.com
 ```
 
@@ -247,8 +235,6 @@ NS LOOKUP (URL) >> google.com
 This option allows you to identify honeypots! The probability that an IP is a honeypot is captured in a "Honeyscore" value that can range from 0.0 to 1.0
 ```
 ReconSpider >> 7
-```
-```
 HONEYPOT (IP) >> 1.1.1.1
 ```
 
