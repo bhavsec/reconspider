@@ -24,17 +24,23 @@ ENTER 0 - 7 TO SELECT OPTIONS
 6. NS LOOKUP      Obtain domain name or IP address mapping
 7. HONEYPOT       Check if it's honeypot or a real control system
 
-0.  EXIT          Exit from ReconSpider Framework
+0. EXIT           Exit from ReconSpider Framework
        """)
+banner()
 
 if sys.version_info[0] > 2:
        try:
               print(banner())
               from core import args
 
-
        except ModuleNotFoundError:
               print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
               quit()
 else:
-       print("\nNew CLI is currently under testing for Python 2, Please run using: python3 reconspider.py")
+       try:
+              print(banner())
+              from core import args
+       
+       except ImportError:
+              print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
+              quit()
