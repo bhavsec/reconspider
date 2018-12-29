@@ -1,0 +1,10 @@
+language: python
+os:
+  - linux
+python:
+  - 2.7
+  - 3.7
+install:
+  - python setup.py install
+script:
+  - python reconspider.py
