@@ -1,4 +1,5 @@
 import re
+import os
 import requests
 
 
@@ -19,4 +20,5 @@ def dnsmap(dnsmap_inp):
         image_name = domain.replace(".com","")
         with open('%s.png' % image_name, 'wb') as f:
             f.write(image.content)
-            print("\nOpen reconspider/%s.png image to view full Mapping of %s domain" % (image_name, domain))
+            os.startfile('%s.png' % image_name)
+            print("\n%s.png Image stored to current reconspider directory" % image_name)
