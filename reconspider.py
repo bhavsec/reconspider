@@ -25,7 +25,7 @@ ENTER 0 - 7 TO SELECT OPTIONS
 """)
 
 try:
-       from core import argparse
+       from core import args
 
 except ModuleNotFoundError:
     print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
