@@ -1,4 +1,10 @@
-from core import argparse
+try:
+       from core import argparse
+
+except ModuleNotFoundError:
+    print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
+    quit()
+
 
 print("""
 __________                               _________       __     ___            

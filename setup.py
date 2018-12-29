@@ -15,6 +15,6 @@ setup(
     author_email='contact@bhavkaran.com',
     license='GPL-3.0',
 
-    install_requires = ['shodan','requests','tld'],
+    install_requires = ['shodan','requests'],
     console =['reconspider.py'],
 )
