@@ -2,9 +2,9 @@ language: python
 os:
   - linux
 python:
-  - 2.7
-  - 3.7
+  - 2.7.15
+  - 3.7.2
 install:
-  - python setup.py install
+  - pip install requests shodan prompt_toolkit
 script:
   - python reconspider.py
