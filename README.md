@@ -16,7 +16,7 @@ ReconSpider aggregate all the raw data, visualize it on a dashboard and facilita
 
 
 
-# Why is it called ReconSpider ?
+# Why it's called ReconSpider ?
 
 ```ReconSpider```  =  ```Recon```  +  ```Spider```
 
@@ -92,17 +92,19 @@ __________                               _________       __     ___
                       developer: https://bhavkaran.com
 
 
-usage: python reconspider.py [OPTIONS]
+usage: python reconspider.py
 
-OPTIONS:
+ENTER 0 - 7 TO SELECT OPTIONS
 
---ip       , -i     Enumerate information from IP Address
---url      , -u     Gather information about given Website
---whois    , -w     Gather domain registration information
---dnsmap   , -d     Map DNS records associated with the target
---portscan , -p     Discover hosts and services on a network
---nslookup , -n     Obtain domain name or IP address mapping
---honeypot , -hp    Check if it's honeypot or a real control system
+1. IP             Enumerate information from IP Address
+2. URL            Gather information about given Website
+3. WHOIS          Gather domain registration information
+4. DNS MAP        Map DNS records associated with the target
+5. PORT SCAN      Discover hosts and services on a network
+6. NS LOOKUP      Obtain domain name or IP address mapping
+7. HONEYPOT       Check if it's honeypot or a real control system
+
+0.  EXIT          Exit from ReconSpider Framework
 ```
 
 
@@ -112,7 +114,7 @@ OPTIONS:
 Installing and using ReconSpider is very easy. Installation process is very simple.
 
 1. Downloading or cloning ReconSpider github repository.
-2. Downloading and installing all dependencies.
+2. Installing all dependencies.
 
 Let's Begin !!
 
@@ -180,53 +182,85 @@ In order to start ReconSpider just type:
 python reconspider.py
 ```
 
-**--ip**
+**1. IP**
 
 This option gathers all the information of given IP Address from public resources.
 ```
-python reconspider.py --ip 8.8.8.8
+ReconSpider >> 1
+```
+```
+IP >> 8.8.8.8
 ```
 
-**--url**
+**2. URL**
 
 This option gathers all the information of given URL Address from public sources and give you in depth-information of IP address, country, city, organization, ISP, open ports and so more.
-``` 
-python reconspider.py --url google.com 
+```
+ReconSpider >> 2
+```
+```
+URL >> vulnweb.com
 ```
 
-**--whois**
+**3. WHOIS**
 
 This option allows you to search for domain name availability and WHOIS information including name, organisation, address, city, country, zipcode, registrar, name servers etc.
 ```
-python reconspider.py --whois google.com
+ReconSpider >> 3
+```
+```
+WHOIS (URL) >> google.com
 ```
 
-**--dnsmap**
+**4. DNS MAP**
 
 This option allows you to map an organizations attack surface with a virtual DNS Map of the DNS records associated with the target organization.
 ```
-python reconspider.py --dnsmap google.com
+ReconSpider >> 4
+```
+```
+DNS MAP (URL) >> vulnweb.com
 ```
 
-**--portscan**
+**5. PORT SCAN**
 
 This option allows you to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics.
 ```
-python reconspider.py --portscan google.com
+ReconSpider >> 5
+```
+```
+PORT SCAN (URL / IP) >> vulnweb.com
 ```
 
-**--nslookup**
+**6. NS LOOKUP**
 
 This option allows you to obtain information about internet servers. It finds name server information for domains by querying the Domain Name System.
 ```
-python reconspider.py --nslookup google.com
+ReconSpider >> 6
+```
+```
+NS LOOKUP (URL) >> google.com
 ```
 
-**--honeypot**
+**7. HONEYPOT**
 
 This option allows you to identify honeypots! The probability that an IP is a honeypot is captured in a "Honeyscore" value that can range from 0.0 to 1.0
 ```
-python reconspider.py --honeypot google.com
+ReconSpider >> 7
+```
+```
+HONEYPOT (IP) >> 1.1.1.1
+```
+
+**0. EXIT**
+
+This option allows you to Exit from ReconSpider Framework.
+```
+ReconSpider >> 0
+```
+Output:
+```
+Bye, See ya again..
 ```
 
 # Note

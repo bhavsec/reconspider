@@ -1,11 +1,3 @@
-try:
-       from core import argparse
-
-except ModuleNotFoundError:
-    print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
-    quit()
-
-
 print("""
 __________                               _________       __     ___            
 \______   \ ____   ____  ____   ____    /   _____/_____ |__| __| _/___________ 
@@ -17,15 +9,24 @@ __________                               _________       __     ___
                       developer: https://bhavkaran.com
 
 
-usage: python reconspider.py [OPTIONS]
+usage: python reconspider.py
 
-OPTIONS:
+ENTER 0 - 7 TO SELECT OPTIONS
 
---ip       , -i     Enumerate information from IP Address
---url      , -u     Gather information about given Website
---whois    , -w     Gather domain registration information
---dnsmap   , -d     Map DNS records associated with the target
---portscan , -p     Discover hosts and services on a network
---nslookup , -n     Obtain domain name or IP address mapping
---honeypot , -hp    Check if it's honeypot or a real control system
+1. IP             Enumerate information from IP Address
+2. URL            Gather information about given Website
+3. WHOIS          Gather domain registration information
+4. DNS MAP        Map DNS records associated with the target
+5. PORT SCAN      Discover hosts and services on a network
+6. NS LOOKUP      Obtain domain name or IP address mapping
+7. HONEYPOT       Check if it's honeypot or a real control system
+
+0.  EXIT          Exit from ReconSpider Framework
 """)
+
+try:
+       from core import argparse
+
+except ModuleNotFoundError:
+    print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
+    quit()

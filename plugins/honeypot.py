@@ -17,4 +17,4 @@ def honeypot(inp):
         else:
             color = red
         probability = str(float(result) * 10)
-        print('\n%s Honeypot Probabilty: %s%s%%%s' % (info, color, probability, end) + '\n')
+        print('\n%sHoneypot Probabilty: %s%s%%%s' % (info, color, probability, end) + '\n')
