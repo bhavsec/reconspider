@@ -1,9 +1,10 @@
 <h1 align="center">
-	<a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider 		height="200" width="200""></a>
+<a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider 		height="200" width="200""></a>
 </h1>
 <h4 align="center"> Most advanced Open Source Intelligence (OSINT) Framework </h4>
 <p align="center">
-	<img src="https://img.shields.io/badge/release-1.0.5%20(beta)-blue.svg">
+<a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/badge/release-1.0.5%20(beta)-blue.svg">
+<a href="https://travis-ci.com/bhavsec/reconspider"><img src="https://api.travis-ci.com/bhavsec/reconspider.svg">
 </p>
 
 # ReconSpider
