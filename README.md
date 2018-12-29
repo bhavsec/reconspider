@@ -3,16 +3,32 @@
 </h1>
 <h4 align="center"> Most advanced Open Source Intelligence (OSINT) Framework </h4>
 <p align="center">
-	<img src="https://img.shields.io/badge/release-1.0.2%20(beta)-blue.svg">
+	<img src="https://img.shields.io/badge/release-1.0.5%20(beta)-blue.svg">
 </p>
 
 # ReconSpider
 
-ReconSpider is most advanced Open Source Intelligence (OSINT) Framework for scanning IP Address, Emails, Websites, Organizations and find out information from different sources.
+ReconSpider is most Advanced Open Source Intelligence (OSINT) Framework for scanning IP Address, Emails, Websites, Organizations and find out information from different sources.
 
 ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters and Cyber Crime Investigators to find deep information about their target.
 
 ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data.
+
+
+
+# Why is it called ReconSpider ?
+
+```ReconSpider```  =  ```Recon```  +  ```Spider```
+
+
+<b>Recon</b> = Reconnaissance
+
+Reconnaissance is a mission to obtain information by various detection methods, about the activities and resources of an enemy or potential enemy, or geographic characteristics of a particular area.
+
+
+<b>Spider</b> = Web crawler
+
+A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering).
 
 
 
@@ -80,12 +96,13 @@ usage: python reconspider.py [OPTIONS]
 
 OPTIONS:
 
---ip        , -i        Enumerate information from IP Address
---url       , -u        Gather information from given Website
---whois     , -w        Gather domain registration information
---portscan  , -p        Discover hosts and services on a network
---nslookup  , -ns       Obtain domain name or IP address mapping
---honeypot  , -hp       Check if it's honeypot or a real control system
+--ip       , -i     Enumerate information from IP Address
+--url      , -u     Gather information about given Website
+--whois    , -w     Gather domain registration information
+--dnsmap   , -d     Map DNS records associated with the target
+--portscan , -p     Discover hosts and services on a network
+--nslookup , -n     Obtain domain name or IP address mapping
+--honeypot , -hp    Check if it's honeypot or a real control system
 ```
 
 
@@ -182,6 +199,13 @@ python reconspider.py --url google.com
 This option allows you to search for domain name availability and WHOIS information including name, organisation, address, city, country, zipcode, registrar, name servers etc.
 ```
 python reconspider.py --whois google.com
+```
+
+**--dnsmap**
+
+This option allows you to map an organizations attack surface with a virtual DNS Map of the DNS records associated with the target organization.
+```
+python reconspider.py --dnsmap google.com
 ```
 
 **--portscan**

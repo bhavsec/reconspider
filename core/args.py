@@ -2,6 +2,7 @@ import socket
 import argparse
 
 from plugins.censys import censys_ip
+from plugins.dnsdump import dnsmap
 from plugins.honeypot import honeypot
 from plugins.nslookup import nslookup
 from plugins.portscan import portscan
@@ -14,6 +15,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-i', '--ip', help="Enumerate information from IP Address")
 parser.add_argument('-u', '--url', help="Enumerate information from  given Website")
 parser.add_argument('-w', '--whois', help="Gather domain registration information")
+parser.add_argument('-d', '--dnsmap', help="Map DNS records associated with the target")
 parser.add_argument('-p', '--portscan', help="Discover hosts and services on a network")
 parser.add_argument('-n', '--nslookup', help="Obtain domain name or IP address mapping")
 parser.add_argument('-hp', '--honeypot', help="Check if it's honeypot or a real control system")
@@ -34,6 +36,11 @@ if args.url:
 if args.whois:
     wh = args.whois
     whois(wh)
+    exit()
+
+if args.dnsmap:
+    dnsmap_inp = args.dnsmap
+    dnsmap(dnsmap_inp)
     exit()
 
 if args.portscan:

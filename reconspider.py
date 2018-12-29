@@ -18,8 +18,8 @@ OPTIONS:
 --ip       , -i     Enumerate information from IP Address
 --url      , -u     Gather information about given Website
 --whois    , -w     Gather domain registration information
+--dnsmap   , -d     Map DNS records associated with the target
 --portscan , -p     Discover hosts and services on a network
 --nslookup , -n     Obtain domain name or IP address mapping
 --honeypot , -hp    Check if it's honeypot or a real control system
-
 """)
