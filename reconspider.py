@@ -26,7 +26,6 @@ ENTER 0 - 7 TO SELECT OPTIONS
 
 0. EXIT           Exit from ReconSpider Framework
        """)
-banner()
 
 if sys.version_info[0] > 2:
        try:

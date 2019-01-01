@@ -1,6 +1,7 @@
 import re
 import os
 import requests
+import platform
 
 
 def dnsmap(dnsmap_inp):
@@ -20,5 +21,9 @@ def dnsmap(dnsmap_inp):
         image_name = domain.replace(".com","")
         with open('%s.png' % image_name, 'wb') as f:
             f.write(image.content)
-            os.startfile('%s.png' % image_name)
-            print("\n%s.png Image stored to current reconspider directory" % image_name)
+            print("\n%s.png DNS Map image stored to current reconspider directory" % image_name)
+            
+            if (platform.system() != "Windows"):
+                pass
+            else:
+                os.startfile('%s.png' % image_name)
