@@ -1,0 +1,10 @@
+language: python
+os:
+  - linux
+python:
+  - 2.7.15
+  - 3.6
+install:
+  - pip install requests shodan prompt_toolkit
+script:
+  - python reconspider.py
