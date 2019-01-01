@@ -30,7 +30,7 @@ ENTER 0 - 7 TO SELECT OPTIONS
 if sys.version_info[0] > 2:
        try:
               print(banner())
-              from core import args
+              from core import repl_prompt
 
        except ModuleNotFoundError:
               print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
@@ -38,7 +38,7 @@ if sys.version_info[0] > 2:
 else:
        try:
               print(banner())
-              from core import args
+              from core import repl_prompt
        
        except ImportError:
               print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
