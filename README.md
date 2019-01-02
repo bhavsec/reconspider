@@ -1,10 +1,12 @@
 <h1 align="center">
-<a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider 		height="200" width="200""></a>
+<a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider" height="200" width="200"></a>
 </h1>
-<h4 align="center"> Most advanced Open Source Intelligence (OSINT) Framework </h4>
+
+<h4 align="center"> Most Advanced Open Source Intelligence (OSINT) Framework </h4>
+
 <p align="center">
 <a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/badge/release-1.0.5%20(beta)-blue.svg">
-<a href="https://travis-ci.com/bhavsec/reconspider"><img src="https://api.travis-ci.com/bhavsec/reconspider.svg">
+<a href="https://travis-ci.com/bhavsec/reconspider"><img src="https://api.travis-ci.com/bhavsec/reconspider.svg"></a>
 </p>
 
 # ReconSpider
@@ -22,14 +24,20 @@ ReconSpider aggregate all the raw data, visualize it on a dashboard and facilita
 ```ReconSpider```  =  ```Recon```  +  ```Spider```
 
 
-<b>Recon</b> = Reconnaissance
+<b>Recon = Reconnaissance</b>
 
 Reconnaissance is a mission to obtain information by various detection methods, about the activities and resources of an enemy or potential enemy, or geographic characteristics of a particular area.
 
 
-<b>Spider</b> = Web crawler
+<b>Spider = Web crawler</b>
 
 A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering).
+
+
+
+# ReconSpider Full Wiki and How-to Guide
+
+Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/reconspider/wiki) for a detailed explanation of each and every feature.
 
 
 
@@ -105,7 +113,7 @@ ENTER 0 - 7 TO SELECT OPTIONS
 6. NS LOOKUP      Obtain domain name or IP address mapping
 7. HONEYPOT       Check if it's honeypot or a real control system
 
-0.  EXIT          Exit from ReconSpider Framework
+0. EXIT           Exit from ReconSpider Framework
 ```
 
 
@@ -244,19 +252,18 @@ Bye, See ya again..
 
 # Contact
 
-Do you want to have a conversation in private? Hit me up on these social networks:
+Do you want to have a conversation in private?
 
     Twitter:            @bhavsec
     Facebook:           fb.com/Mr.BhavKaran
     Instagram:          instagram.com/bhav_karan
     LinkedIn:           linkedin.com/in/bhav
+    Email:              contact@bhavkaran.com
     Website:            bhavkaran.com
 
 
 
 # Frequent & Seamless Updates
-ReconSpider is under heavy development and updates for fixing bugs. optimizing performance & new features are being rolled regularly.
-
-Custom error handling is also not implemented, and all the focus is to create required functionality. 
+ReconSpider is under heavy development and updates for fixing bugs. optimizing performance & new features are being rolled regularly. Custom error handling is also not implemented, and all the focus is to create required functionality. 
 
 If you would like to see features and issues that are being worked on, you can do that on [Development Progress](https://github.com/bhavsec/reconspider/projects/1) project board.
