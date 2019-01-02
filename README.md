@@ -35,12 +35,6 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 
 
 
-# ReconSpider Full Wiki and How-to Guide
-
-Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/reconspider/wiki) for a detailed explanation of each and every feature.
-
-
-
 # Table Of Contents
 
 1. [Version (beta)](https://github.com/bhavsec/reconspider#version-beta)
@@ -100,8 +94,6 @@ __________                               _________       __     ___
 
                       developer: https://bhavkaran.com
 
-
-usage: python reconspider.py
 
 ENTER 0 - 7 TO SELECT OPTIONS
 
@@ -247,6 +239,12 @@ Output:
 ```
 Bye, See ya again..
 ```
+
+
+
+# ReconSpider Full Wiki and How-to Guide
+
+Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/reconspider/wiki) for a detailed explanation of each and every feature.
 
 
 

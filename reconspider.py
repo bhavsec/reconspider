@@ -12,8 +12,6 @@ __________                               _________       __     ___
                       developer: https://bhavkaran.com
 
 
-usage: python reconspider.py
-
 ENTER 0 - 7 TO SELECT OPTIONS
 
 1. IP             Enumerate information from IP Address
