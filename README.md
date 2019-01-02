@@ -44,8 +44,8 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 7. [Setting up the environment (Linux Operating System)](https://github.com/bhavsec/reconspider#setting-up-the-environment-linux-operating-system)
 8. [Setting up the environment (Windows Operating System)](https://github.com/bhavsec/reconspider#setting-up-the-environment-windows-operating-system)
 9. [Usage](https://github.com/bhavsec/reconspider#usage)
-10. [Note](https://github.com/bhavsec/reconspider#note )
-
+10. [Contact](https://github.com/bhavsec/reconspider#contact)
+11. [Updates](https://github.com/bhavsec/reconspider#frequent--seamless-updates)
 
 
 # Version (beta)
@@ -164,16 +164,6 @@ python setup.py install
 
 
 
-# Developer
-
-    Name                BhavKaran
-    Twitter:            @bhavsec
-    Facebook:           fb.com/Mr.BhavKaran
-    LinkedIn:           linkedin.com/in/bhav
-    Website:            bhavkaran.com
-
-
-
 # Usage 
 
 
@@ -250,7 +240,23 @@ Output:
 Bye, See ya again..
 ```
 
-# Note
-```
-Currently project is in developement phase and lot of work is going on. Custom error handling is also not implemented, and all the focus is to create required functionality. 
-```
+
+
+# Contact
+
+Do you want to have a conversation in private? Hit me up on these social networks:
+
+    Twitter:            @bhavsec
+    Facebook:           fb.com/Mr.BhavKaran
+    Instagram:          instagram.com/bhav_karan
+    LinkedIn:           linkedin.com/in/bhav
+    Website:            bhavkaran.com
+
+
+
+# Frequent & Seamless Updates
+ReconSpider is under heavy development and updates for fixing bugs. optimizing performance & new features are being rolled regularly.
+
+Custom error handling is also not implemented, and all the focus is to create required functionality. 
+
+If you would like to see features and issues that are being worked on, you can do that on [Development Progress](https://github.com/bhavsec/reconspider/projects/1) project board.
