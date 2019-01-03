@@ -47,7 +47,8 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 8. [Setting up the environment (Windows Operating System)](https://github.com/bhavsec/reconspider#setting-up-the-environment-windows-operating-system)
 9. [Usage](https://github.com/bhavsec/reconspider#usage)
 10. [Contact](https://github.com/bhavsec/reconspider#contact)
-11. [Updates](https://github.com/bhavsec/reconspider#frequent--seamless-updates)
+11. [Wiki & How-to Guide](https://github.com/bhavsec/reconspider#reconspider-full-wiki-and-how-to-guide)
+12. [Updates](https://github.com/bhavsec/reconspider#frequent--seamless-updates)
 
 
 # Version (beta)
