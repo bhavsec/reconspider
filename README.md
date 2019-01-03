@@ -236,6 +236,7 @@ HONEYPOT (IP) >> 1.1.1.1
 This option allows you to check for updates. If a newer version will available, ReconSpider will download and merge the updates into the current directory without overwriting other files.
 ```
 ReconSpider >> 8
+Checking for updates..
 ```
 
 **0. EXIT**
@@ -243,12 +244,12 @@ ReconSpider >> 8
 This option allows you to exit from ReconSpider Framework to your current Operating System's terminal.
 ```
 ReconSpider >> 0
-Checking for updates..
+Bye, See ya again..
 ```
 
 
 
-# Contact
+# Contact Developer
 
 Do you want to have a conversation in private?
 
