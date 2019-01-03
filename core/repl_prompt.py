@@ -10,6 +10,7 @@ from plugins.portscan import portscan
 from plugins.shodan_io import shodan_host
 from plugins.shodan_io import shodan_ip
 from plugins.whois import whois
+from core.updater import update
 from prompt_toolkit import prompt
 
 
@@ -74,6 +75,12 @@ def repl():  # Read–eval–print loop
                 hp_inp = prompt("HONEYPOT (IP) >> ")
                 break
             honeypot(hp_inp)
+            continue
+
+        elif choice == 8:
+            while 1:
+                break
+            update()
             continue
         
         elif choice == 0:

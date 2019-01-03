@@ -14,15 +14,16 @@ __________                               _________       __     ___
 
 ENTER 0 - 7 TO SELECT OPTIONS
 
-1. IP             Enumerate information from IP Address
-2. URL            Gather information about given Website
-3. WHOIS          Gather domain registration information
-4. DNS MAP        Map DNS records associated with the target
-5. PORT SCAN      Discover hosts and services on a network
-6. NS LOOKUP      Obtain domain name or IP address mapping
-7. HONEYPOT       Check if it's honeypot or a real control system
+1. IP                Enumerate  information  from  IP Address
+2. URL               Gather  information  about given Website
+3. WHOIS             Gather domain  registration  information
+4. DNS MAP           Map DNS  records associated  with target
+5. PORT SCAN         Discover hosts and services on a network
+6. NS LOOKUP         Obtain domain name or IP address mapping
+7. HONEYPOT          Check if it's honeypot or a real  system
+8. UPDATE            Update ReconSpider to its latest version
 
-0. EXIT           Exit from ReconSpider Framework
+0. EXIT              Exit from  ReconSpider  to your terminal
        """)
 
 if sys.version_info[0] > 2:

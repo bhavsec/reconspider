@@ -97,15 +97,16 @@ __________                               _________       __     ___
 
 ENTER 0 - 7 TO SELECT OPTIONS
 
-1. IP             Enumerate information from IP Address
-2. URL            Gather information about given Website
-3. WHOIS          Gather domain registration information
-4. DNS MAP        Map DNS records associated with the target
-5. PORT SCAN      Discover hosts and services on a network
-6. NS LOOKUP      Obtain domain name or IP address mapping
-7. HONEYPOT       Check if it's honeypot or a real control system
+1. IP                Enumerate  information  from  IP Address
+2. URL               Gather  information  about given Website
+3. WHOIS             Gather domain  registration  information
+4. DNS MAP           Map DNS  records associated  with target
+5. PORT SCAN         Discover hosts and services on a network
+6. NS LOOKUP         Obtain domain name or IP address mapping
+7. HONEYPOT          Check if it's honeypot or a real  system
+8. UPDATE            Update ReconSpider to its latest version
 
-0. EXIT           Exit from ReconSpider Framework
+0. EXIT              Exit from  ReconSpider  to your terminal
 ```
 
 
@@ -229,22 +230,20 @@ ReconSpider >> 7
 HONEYPOT (IP) >> 1.1.1.1
 ```
 
+**8. UPDATE**
+
+This option allows you to check for updates. If a newer version will available, ReconSpider will download and merge the updates into the current directory without overwriting other files.
+```
+ReconSpider >> 8
+```
+
 **0. EXIT**
 
-This option allows you to Exit from ReconSpider Framework.
+This option allows you to exit from ReconSpider Framework to your current Operating System's terminal.
 ```
 ReconSpider >> 0
+Checking for updates..
 ```
-Output:
-```
-Bye, See ya again..
-```
-
-
-
-# ReconSpider Full Wiki and How-to Guide
-
-Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/reconspider/wiki) for a detailed explanation of each and every feature.
 
 
 
@@ -258,6 +257,12 @@ Do you want to have a conversation in private?
     LinkedIn:           linkedin.com/in/bhav
     Email:              contact@bhavkaran.com
     Website:            bhavkaran.com
+
+
+
+# ReconSpider Full Wiki and How-to Guide
+
+Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/reconspider/wiki) for a detailed explanation of each and every option and feature.
 
 
 
