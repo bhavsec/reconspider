@@ -40,7 +40,6 @@ def update():
             os.system('cp -r %s/%s/* %s && rm -r %s/%s/ 2>/dev/null' % (path, folder, path, path, folder))
             print('\n%s Update successful!' % good)
             sys.exit()
-            
         else:
             print('\n%s Update Canceled!' % bad)
 

@@ -7,6 +7,8 @@
 <p align="center">
 <a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/badge/release-1.0.5%20(beta)-blue.svg">
 <a href="https://travis-ci.com/bhavsec/reconspider"><img src="https://api.travis-ci.com/bhavsec/reconspider.svg"></a>
+<a class="badge-align" href="https://www.codacy.com/app/bhavsec/reconspider?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bhavsec/reconspider&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/107277982d6a4f2b9c55bba0d66d8051"/></a>
+
 </p>
 
 # ReconSpider

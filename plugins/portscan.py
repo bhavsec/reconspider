@@ -1,4 +1,3 @@
-import sys
 from requests import get
 
 

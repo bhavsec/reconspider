@@ -1,7 +1,4 @@
 import shodan
-import sys
-import json
-from requests import get
 from core.config import shodan_api
 
 api = shodan.Shodan(shodan_api)
