@@ -274,3 +274,10 @@ Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/recons
 ReconSpider is under heavy development and updates for fixing bugs. optimizing performance & new features are being rolled regularly. Custom error handling is also not implemented, and all the focus is to create required functionality. 
 
 If you would like to see features and issues that are being worked on, you can do that on [Development Progress](https://github.com/bhavsec/reconspider/projects/1) project board.
+
+
+
+# Special Thanks
+
+* [S0md3v](https://github.com/s0md3v/)
+* [Parshant](mailto:parshant.dhall@gmail.com)
