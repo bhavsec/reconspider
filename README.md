@@ -275,7 +275,9 @@ ReconSpider is under heavy development and updates for fixing bugs. optimizing p
 
 If you would like to see features and issues that are being worked on, you can do that on [Development Progress](https://github.com/bhavsec/reconspider/projects/1) project board.
 
+# Added More Power
 
+Recon Spider combines the capabilities of [Photon](https://github.com/s0md3v/Photon) and [Recon Dog](https://github.com/s0md3v/ReconDog) to do a comprehensive enumeration of attack surface.
 
 # Special Thanks
 
