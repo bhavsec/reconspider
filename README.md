@@ -254,9 +254,9 @@ Bye, See ya again..
 Do you want to have a conversation in private?
 
     Twitter:            @bhavsec
-    Facebook:           fb.com/Mr.BhavKaran
-    Instagram:          instagram.com/bhav_karan
-    LinkedIn:           linkedin.com/in/bhav
+    Facebook:           fb.com/bhavsec
+    Instagram:          instagram.com/bhavsec
+    LinkedIn:           linkedin.com/in/bhavsec
     Email:              contact@bhavkaran.com
     Website:            bhavkaran.com
 
