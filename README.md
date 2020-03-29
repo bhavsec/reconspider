@@ -1,5 +1,5 @@
 <h1 align="center">
-<a href="https://github.com/bhavsec/reconspider"><img src="http://reconspider.com/images/reconspider.png" alt="ReconSpider" height="200" width="200"></a>
+<a href="https://github.com/bhavsec/reconspider"><img src="http://bhavkaran.com/reconspider/reconspider.png" alt="ReconSpider" height="200" width="200"></a>
 </h1>
 
 <h4 align="center"> Most Advanced Open Source Intelligence (OSINT) Framework </h4>
@@ -56,8 +56,6 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 # Version (beta)
 
   	ReconSpider   :     1.0.5
-  	Website       :     reconspider.com
-
 
 
 # Overview of the tool:
@@ -73,7 +71,7 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 
 Check out our mind map to see visually organize information of this tool regarding api, services and techniques and more.
 ```
-http://reconspider.com/mindmap.html
+http://bhavkaran.com/reconspider/mindmap.html
 ```
 
 
