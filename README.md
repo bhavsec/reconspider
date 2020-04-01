@@ -356,3 +356,4 @@ If you would like to see features and issues that are being worked on, you can d
 
 * [S0md3v](https://github.com/s0md3v/)
 * [Parshant](mailto:parshant.dhall@gmail.com)
+* [Adithyan AK](https://github.com/adithyan-ak)
