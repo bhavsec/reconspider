@@ -157,9 +157,6 @@ def ftp(host, port):
                     flag = 0
                     pass
 
-                except Exception as e:
-                    flag = 1
-
                 except socket.error as e:
                     flag = 2
                     print(e)
@@ -167,6 +164,9 @@ def ftp(host, port):
                 except KeyboardInterrupt:
                     print("\n User Interrupt! Exitting...")
                     exit()
+
+                except Exception as e:
+                    flag = 1
 
                 if flag == 0:
                     print('')

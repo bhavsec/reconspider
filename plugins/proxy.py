@@ -44,5 +44,4 @@ def ip2Proxy(IP):
             print("IP does not use any Proxy or VPN")
     else:
         print("\nEnter a Valid IP Address")
-        ip2Proxy()
     print("")
