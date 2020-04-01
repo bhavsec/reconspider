@@ -1,7 +1,6 @@
 import requests
 
 
-
 def torrent(IP):
 
     r = requests.get("https://api.antitor.com/history/peer/?ip="+ IP +"&key=3cd6463b477d46b79e9eeec21342e4c7")

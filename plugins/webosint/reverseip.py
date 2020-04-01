@@ -8,4 +8,4 @@ def ReverseIP(host, port):
         result = get(lookup).text
         print(result)
     except Exception as e:
-        print('Error: Invalid IP address')
+        print('Error: Invalid IP address '+e)
