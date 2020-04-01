@@ -12,6 +12,6 @@ setup(
     author="BhavKaran (@bhavsec)",
     author_email="contact@bhavkaran.com",
     license="GPL-3.0",
-    install_requires=["shodan", "requests", "prompt_toolkit"],
+    install_requires=["shodan", "requests", "prompt_toolkit","beautifulsoup4","urllib3","IP2proxy"],
     console=["reconspider.py"],
 )

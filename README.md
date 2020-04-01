@@ -61,7 +61,7 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 # Overview of the tool:
 
 * Performs OSINT scan on a IP Address, Emails, Websites, Organizations and find out information from different sources.
-* Correlates and collaborate the results, show them in a consolidated manner. 
+* Correlates and collaborate the results, show them in a consolidated manner.
 * Use specific script / launch automated OSINT for consolidated data.
 * Currently available in only Command Line Interface (CLI).
 
@@ -87,7 +87,7 @@ ReconSpider and its documents are covered under GPL-3.0 (General Public License 
 
 ```
 __________                               _________       __     ___            
-\______   \ ____   ____  ____   ____    /   _____/_____ |__| __| _/___________ 
+\______   \ ____   ____  ____   ____    /   _____/_____ |__| __| _/___________
  |       _// __ \_/ ___\/  _ \ /    \   \_____  \\____ \|  |/ __ |/ __ \_  __ \
  |    |   \  ___/\  \__(  <_> )   |  \  /        \  |_> >  / /_/ \  ___/|  | \/
  |____|_  /\___  >\___  >____/|___|  / /_______  /   __/|__\____ |\___  >__|   
@@ -96,18 +96,24 @@ __________                               _________       __     ___
                       developer: https://bhavkaran.com
 
 
-ENTER 0 - 7 TO SELECT OPTIONS
+ENTER 0 - 11 TO SELECT OPTIONS
 
-1. IP                Enumerate  information  from  IP Address
-2. URL               Gather  information  about given Website
-3. WHOIS             Gather domain  registration  information
-4. DNS MAP           Map DNS  records associated  with target
-5. PORT SCAN         Discover hosts and services on a network
-6. NS LOOKUP         Obtain domain name or IP address mapping
-7. HONEYPOT          Check if it's honeypot or a real  system
-8. UPDATE            Update ReconSpider to its latest version
+1.  IP                           Enumerate  information  from  IP Address
+2.  DOMAIN                       Gather  information  about  given DOMAIN
+3.  PHONENUMBER                  Gather  information  about   Phonenumber
+4.  DNS MAP                      Map DNS  records associated  with target
+5.  METADATA                     Extract all metadata of  the  given file
+6.  REVERSE IMAGE SEARCH         Obtain domain name or IP address mapping
+7.  HONEYPOT                     Check if it's honeypot or a real  system
+8.  MAC ADDRESS LOOKUP           Obtain information about give Macaddress
+9.  IPHEATMAP                    Draw  out  heatmap  of  locations  of IP
+10. TORRENT                      Gather torrent download  history  of  IP
+11. USERNAME                     Extract Account info. from social  media
+12. IP2PROXY                     Check whether  IP  uses  any VPN / PROXY
+13. MAIL BREACH                  Check whethers given  mail  is  breached
+99. UPDATE                       Update ReconSpider to its latest version
 
-0. EXIT              Exit from  ReconSpider  to your terminal
+0. EXIT                         Exit from  ReconSpider  to your terminal
 ```
 
 
@@ -164,12 +170,24 @@ After unzipping, go to that directory using Command Prompt and type the followin
 python setup.py install
 ```
 
+Step 3 - Database
+
+**Geolite2 City Database**
+```
+https://github.com/texnikru/GeoLite2-Database/blob/master/GeoLite2-City.mmdb.gz
+```
+
+**IP2Proxy Database**
+```
+https://lite.ip2location.com/database/px8-ip-proxytype-country-region-city-isp-domain-usagetype-asn-lastseen
+```
+Download both database and move it to reconspier/plugins/.
 
 
-# Usage 
+# Usage
 
 
-ReconSpider is very handy tool and easy to use. All you have to do is just have to pass values to parameter. 
+ReconSpider is very handy tool and easy to use. All you have to do is just have to pass values to parameter.
 In order to start ReconSpider just type:
 ```
 python reconspider.py
@@ -183,20 +201,21 @@ ReconSpider >> 1
 IP >> 8.8.8.8
 ```
 
-**2. URL**
+**2. DOMAIN**
 
-This option gathers all the information of given URL Address from public sources and give you in depth-information of IP address, country, city, organization, ISP, open ports and so more.
+This option gathers all the information of given URL Address and check for vulneribility.
 ```
-ReconSpider >> 2
-URL >> vulnweb.com
+Reconspider >> 2
+HOST (URL / IP) >> vulnweb.com
+PORT >> 443
 ```
 
-**3. WHOIS**
+**3. PHONENUMBER**
 
-This option allows you to search for domain name availability and WHOIS information including name, organisation, address, city, country, zipcode, registrar, name servers etc.
+This option allows you to gather information of given phonenumber.
 ```
-ReconSpider >> 3
-WHOIS (URL) >> google.com
+Reconspider >> 3
+PHONE NUMBER (919485247632) >>
 ```
 
 **4. DNS MAP**
@@ -207,20 +226,21 @@ ReconSpider >> 4
 DNS MAP (URL) >> vulnweb.com
 ```
 
-**5. PORT SCAN**
+**5. METADATA**
 
-This option allows you to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics.
+This option allows you to extract all metadat of the file.
 ```
-ReconSpider >> 5
-PORT SCAN (URL / IP) >> vulnweb.com
+Reconspider >> 5
+Metadata (PATH) >> /root/Downloads/images.jpeg
 ```
 
-**6. NS LOOKUP**
+**6. REVERSE IMAGE SEARCH**
 
-This option allows you to obtain information about internet servers. It finds name server information for domains by querying the Domain Name System.
+This option allows you to obtain information and similar image that are available in internet.
 ```
-ReconSpider >> 6
-NS LOOKUP (URL) >> google.com
+Reconspider >> 6
+REVERSE IMAGE SEARCH (PATH) >> /root/Downloads/images.jpeg
+Open Search Result in web broser? (Y/N) : y
 ```
 
 **7. HONEYPOT**
@@ -231,11 +251,68 @@ ReconSpider >> 7
 HONEYPOT (IP) >> 1.1.1.1
 ```
 
-**8. UPDATE**
+**8. MAC ADDRESS LOOKUP**
+
+This option allows you to identify Mac address details who is manufacturer, address, country, etc.
+
+```
+Reconspider >> 8
+MAC ADDRESS LOOKUP (Eg:08:00:69:02:01:FC) >>
+```
+
+**9. IPHEATMAP**
+
+This option provided you heatmap of the provided ip or single ip, if connect all the provided ip location with accurate Coordinator.
+```
+Reconspider >> 9
+
+    1) Trace single IP
+    2) Trace multiple IPs
+OPTIONS >>
+```
+
+**10. TORRENT**
+
+This option allows you to gathers history of Torrent download history.
+```
+Reconspider >> 10
+IPADDRESS (Eg:192.168.1.1) >>
+```
+
+**11. USERNAME**
+
+This option allows you to gathers account information of the provided username from social media like Instagram, Twitter, Facebook.
+```
+Reconspider >> 11
+
+1.Facebook
+2.Twitter
+3.Instagram
+
+Username >>
+```
+
+**12. IP2PROXY**
+
+This option allows you to identify whether IP address uses any kind of VPN / Proxy to hide his identify.
+```
+Reconspider >> 12
+IPADDRESS (Eg:192.168.1.1) >>
+```
+
+**12. MAIL BREACH**
+
+This option allows you to identify whether provided mail has been breach in some website.
+```
+Reconspider >> 13
+MAIL ADDRESS (Eg:temp@gmail.com) >>
+```
+
+**99. UPDATE**
 
 This option allows you to check for updates. If a newer version will available, ReconSpider will download and merge the updates into the current directory without overwriting other files.
 ```
-ReconSpider >> 8
+ReconSpider >> 99
 Checking for updates..
 ```
 
@@ -269,7 +346,7 @@ Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/recons
 
 
 # Frequent & Seamless Updates
-ReconSpider is under heavy development and updates for fixing bugs. optimizing performance & new features are being rolled regularly. Custom error handling is also not implemented, and all the focus is to create required functionality. 
+ReconSpider is under heavy development and updates for fixing bugs. optimizing performance & new features are being rolled regularly. Custom error handling is also not implemented, and all the focus is to create required functionality.
 
 If you would like to see features and issues that are being worked on, you can do that on [Development Progress](https://github.com/bhavsec/reconspider/projects/1) project board.
 
