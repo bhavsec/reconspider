@@ -9,7 +9,7 @@ def ip2Proxy(IP):
 
     if re.match(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$",IP):
         db = IP2Proxy.IP2Proxy()
-        db.open("/root/Downloads/reconspider/plugins/IP2PROXY-IP-PROXYTYPE-COUNTRY-REGION-CITY-ISP-DOMAIN-USAGETYPE-ASN-LASTSEEN.BIN")
+        db.open("/root/Downloads/RECONSPIDER/plugins/IP2PROXY-IP-PROXYTYPE-COUNTRY-REGION-CITY-ISP-DOMAIN-USAGETYPE-ASN-LASTSEEN.BIN")
         record = db.get_all(IP)
         db.close()
         if record['is_proxy']!=0:

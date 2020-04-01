@@ -117,4 +117,3 @@ core/config.py
 # database
 plugins/GeoLite2-City.mmdb
 plugins/IP2PROXY-IP-PROXYTYPE-COUNTRY-REGION-CITY-ISP-DOMAIN-USAGETYPE-ASN-LASTSEEN.BIN
-
