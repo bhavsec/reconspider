@@ -34,7 +34,11 @@ MANIFEST
 
 # Installer logs
 pip-log.txt
+output.txt
 pip-delete-this-directory.txt
+plugins/log
+plugins/output.csv
+plugins/output.log
 
 # Unit test / coverage reports
 htmlcov/
@@ -109,3 +113,8 @@ core/config.py
 
 # vscode settings
 .vscode/
+
+# database
+plugins/GeoLite2-City.mmdb
+plugins/IP2PROXY-IP-PROXYTYPE-COUNTRY-REGION-CITY-ISP-DOMAIN-USAGETYPE-ASN-LASTSEEN.BIN
+
