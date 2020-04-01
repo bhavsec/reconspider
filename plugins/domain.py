@@ -12,8 +12,8 @@ from .webosint.header import header
 from .webosint.crawler import crawler
 from .webosint.who.whoami import whoami
 
-global host
-global port
+global host = None
+global port = None
 
 # Checking whether the target host is alive or dead
 def CheckTarget():

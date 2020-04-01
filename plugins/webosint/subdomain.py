@@ -1,11 +1,6 @@
 import json
 import requests
 
-R = '\033[31m' # red
-G = '\033[32m' # green
-C = '\033[36m' # cyan
-W = '\033[0m'  # white
-
 def SubDomain(host, port):
     print ('[+]' +  'Fetching Subdomains of Target...' + '\n')
     url = 'https://www.virustotal.com/vtapi/v2/domain/report'
