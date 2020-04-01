@@ -127,7 +127,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             country_short = rec.country_short
-        except:
+        except Exception as e:
             country_short = _INVALID_IP_ADDRESS
         return country_short
 
@@ -136,7 +136,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             country_long = rec.country_long
-        except:
+        except Exception as e:
             country_long = _INVALID_IP_ADDRESS
         return country_long
 
@@ -145,7 +145,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             region = rec.region
-        except:
+        except Exception as e:
             region = _INVALID_IP_ADDRESS
         return region
 
@@ -154,7 +154,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             city = rec.city
-        except:
+        except Exception as e:
             city = _INVALID_IP_ADDRESS
         return city
 
@@ -163,7 +163,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             isp = rec.isp
-        except:
+        except Exception as e:
             isp = _INVALID_IP_ADDRESS
         return isp
 
@@ -172,7 +172,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             proxy_type = rec.proxy_type
-        except:
+        except Exception as e:
             proxy_type = _INVALID_IP_ADDRESS
         return proxy_type
 
@@ -184,7 +184,7 @@ class IP2Proxy(object):
                 is_proxy = 0 if (rec.country_short == '-') else ( 2 if ((rec.proxy_type == 'DCH') | (rec.proxy_type == 'SES')) else 1)
             else:
                 is_proxy = 0 if (rec.proxy_type == '-') else ( 2 if ((rec.proxy_type == 'DCH') | (rec.proxy_type == 'SES')) else 1)
-        except:
+        except Exception as e:
             is_proxy = -1
         return is_proxy
 
@@ -193,7 +193,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             domain = rec.domain
-        except:
+        except Exception as e:
             domain = _INVALID_IP_ADDRESS
         return domain
 
@@ -202,7 +202,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             usage_type = rec.usage_type
-        except:
+        except Exception as e:
             usage_type = _INVALID_IP_ADDRESS
         return usage_type
 
@@ -211,7 +211,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             asn = rec.asn
-        except:
+        except Exception as e:
             asn = _INVALID_IP_ADDRESS
         return asn
 
@@ -220,7 +220,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             as_name = rec.as_name
-        except:
+        except Exception as e:
             as_name = _INVALID_IP_ADDRESS
         return as_name
 
@@ -229,7 +229,7 @@ class IP2Proxy(object):
         try:
             rec = self._get_record(ip)
             last_seen = rec.last_seen
-        except:
+        except Exception as e:
             last_seen = _INVALID_IP_ADDRESS
         return last_seen
 
@@ -253,7 +253,7 @@ class IP2Proxy(object):
                 is_proxy = 0 if (rec.country_short == '-') else ( 2 if ((rec.proxy_type == 'DCH') | (rec.proxy_type == 'SES')) else 1)
             else:
                 is_proxy = 0 if (rec.proxy_type == '-') else ( 2 if ((rec.proxy_type == 'DCH') | (rec.proxy_type == 'SES')) else 1)
-        except:
+        except Exception as e:
             country_short = _INVALID_IP_ADDRESS
             country_long = _INVALID_IP_ADDRESS
             region = _INVALID_IP_ADDRESS
@@ -407,7 +407,7 @@ class IP2Proxy(object):
                     # ipnum = struct.unpack('!L', socket.inet_pton(socket.AF_INET, addr))[0]
                     socket.inet_pton(socket.AF_INET, addr)
                     ipv = 4
-                except:
+                except Exception as e:
                     # reformat ipv4 address in ipv6
                     if ((ipnum >= 281470681743360) and (ipnum <= 281474976710655)):
                         ipv = 4
@@ -427,7 +427,7 @@ class IP2Proxy(object):
                     ipnum = ipnum % 4294967296
                 else:
                     ipv = 6
-        except:
+        except Exception as e:
             ipnum = struct.unpack('!L', socket.inet_pton(socket.AF_INET, addr))[0]
             # socket.inet_pton(socket.AF_INET, addr)
             ipv = 4

@@ -1,6 +1,5 @@
 from plugins.api import phoneapis
 import requests
-import json
 
 def Phonenumber(ph):
     print ('[+]' + ' Fetching Phonenumber Details...' + '\n')

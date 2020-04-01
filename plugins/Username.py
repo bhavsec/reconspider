@@ -25,14 +25,6 @@ def user(choice,username):
     soup = BeautifulSoup(response.text, 'html.parser')
 
     #List that will store the data that is to be fetched
-    data = {'Name': "null",
-            'Photo_link': "null",
-            'Work':{'Company': "null", 'Position': "null", 'time_period': "null", 'Location': "null"},
-            'Education': {'Institute': "null", 'time_period': "null", 'Location': "null"},
-            'Address': {'Current_city': "null", 'Home_town': "null"},
-            'Favouriate': {},
-            'Contact_info': {}
-            }
 
     ###Finding Name of the user
     #Min div element is found which contains all the information
@@ -74,19 +66,7 @@ def user(choice,username):
             print("No Home details found")
 
     #finding contact details of the user
-    def find_contact_details():
-        contact = soup.find(id="pagelet_contact")
-        orange = contact.find(attrs={"class":"_4qm1"})
-        if (orange.get_text() !=" "):
-            for category in contact.find_all(attrs={"class":"_4qm1"}):
-                print(category.find('span').get_text() + " : ")
-                for company in category.find_all(attrs={"class":"_2iem"}):
-                    if (company.get_text() != " "):
-                        print(company.get_text())
-                    else:
-                        continue
-        else:
-             print("No Contact details found")
+
 
     ###Logic for finding the status of the response
     if ("200" in str(response)):
@@ -109,7 +89,7 @@ def Instagram(username):
         print("Full Name: "+res['full_name'])
         try:
             print("Business Category: "+res['edge_follow']['business_category_name'])
-        except:
+        except Exception as e:
             print("Account :"+" Private")
         finally:
             print("Biograph: " + res['biography'])
@@ -134,28 +114,28 @@ def ScrapTweets(username):
     try:
         full_name = soup.find('a', attrs={"class": "ProfileHeaderCard-nameLink u-textInheritColor js-nav"})
         print("User Name --> " + full_name.text)
-    except:
+    except Exception as e:
         print("User Name -->"+" Not Found")
     print()
 
     try:
         user_id = soup.find('b', attrs={"class": "u-linkComplex-target"})
         print("User Id --> " + user_id.text)
-    except:
+    except Exception as e:
         print("User Id --> "+"Not Found")
     print()
 
     try:
         decription = soup.find('p', attrs={"class": "ProfileHeaderCard-bio u-dir"})
         print("Description --> " + decription.text)
-    except:
+    except Exception as e:
         print("Decription not provided by the user")
     print()
 
     try:
         user_location = soup.find('span', attrs={"class": "ProfileHeaderCard-locationText u-dir"})
         print("Location -->  " + user_location.text.strip())
-    except:
+    except Exception as e:
         print("Location not provided by the user")
     print()
 
@@ -163,14 +143,14 @@ def ScrapTweets(username):
         connectivity = soup.find('span', attrs={"class": "ProfileHeaderCard-urlText u-dir"})
         tittle = connectivity.a["title"]
         print("Link provided by the user --> " + tittle)
-    except:
+    except Exception as e:
         print("No contact link is provided by the user")
     print()
 
     try:
         join_date = soup.find('span', attrs={"class": "ProfileHeaderCard-joinDateText js-tooltip u-dir"})
         print("The user joined twitter on --> " + join_date.text)
-    except:
+    except Exception as e:
         print("The joined date is not provided by the user")
     print()
 
@@ -178,32 +158,32 @@ def ScrapTweets(username):
         birth = soup.find('span', attrs={"class": "ProfileHeaderCard-birthdateText u-dir"})
         birth_date = birth.span.text
         print("Date of Birth:"+birth_date.strip())
-    except:
+    except Exception as e:
         print("Birth Date not provided by the user")
     print()
 
     try:
         span_box = soup.findAll('span', attrs={"class": "ProfileNav-value"})
         print("Total tweets --> " + span_box[0].text)
-    except:
+    except Exception as e:
         print("Total Tweets --> Zero")
     print()
 
     try:
         print("Following --> " +span_box[1].text)
-    except:
+    except Exception as e:
         print("Following --> Zero")
     print()
 
     try:
         print("Followers --> " + span_box[2].text)
-    except:
+    except Exception as e:
         print("Followers --> Zero")
     print()
 
     try:
         print("Likes send by him --> " + span_box[3].text)
-    except:
+    except Exception as e:
         print("Likes send by him --> Zero")
     print()
 
@@ -212,7 +192,7 @@ def ScrapTweets(username):
             print("No. of parties he is Subscribed to --> " + span_box[4].text)
         else:
             print("No. of parties he is Subscribed to --> Zero")
-    except:
+    except Exception as e:
         print("No. of parties he is Subscribed to --> Zero")
     print()
 

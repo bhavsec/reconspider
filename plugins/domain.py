@@ -12,7 +12,7 @@ from .webosint.header import header
 from .webosint.crawler import crawler
 from .webosint.who.whoami import whoami
 
-global host
+global host 
 global port
 
 # Checking whether the target host is alive or dead
