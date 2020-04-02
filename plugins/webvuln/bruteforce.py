@@ -1,4 +1,5 @@
-import paramiko,requests,socket
+import paramiko
+import socket
 from ftplib import FTP
 
 def ssh(host, port):
@@ -35,7 +36,6 @@ def ssh(host, port):
                     try:
                         ssh.connect(host, port=port, username=username, password=password, timeout=10)
                         flag = 0
-                        pass
 
                     except paramiko.AuthenticationException:
                         flag = 1
@@ -58,9 +58,6 @@ def ssh(host, port):
                         print('')
                     elif flag == 1:
                         print("Invalid Credentials")
-
-                    else:
-                        pass
         except socket.error as e:
             print("Error : %s" %e)
 
@@ -93,7 +90,6 @@ def ssh(host, port):
                     try:
                         ssh.connect(host, port=22, username=username, password=password, timeout=10)
                         flag = 0
-                        pass
 
                     except paramiko.AuthenticationException:
                         flag = 1
@@ -116,9 +112,6 @@ def ssh(host, port):
                         print('')
                     elif flag == 1:
                         print("Invalid Credentials")
-
-                    else:
-                        pass
         except socket.error as e:
             print("Error : %s" % e)
 
@@ -155,7 +148,6 @@ def ftp(host, port):
                 try:
                     ftp.login(user='username', passwd='password')
                     flag = 0
-                    pass
 
                 except socket.error as e:
                     flag = 2
@@ -176,9 +168,6 @@ def ftp(host, port):
                     print('')
                 elif flag == 1:
                     print("Invalid Credentials")
-
-                else:
-                    pass
 
     except socket.error as e:
         print("Error : %s" %e)

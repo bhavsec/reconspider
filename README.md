@@ -172,16 +172,11 @@ python setup.py install
 
 Step 3 - Database
 
-**Geolite2 City Database**
-```
-https://github.com/texnikru/GeoLite2-Database/blob/master/GeoLite2-City.mmdb.gz
-```
-
 **IP2Proxy Database**
 ```
 https://lite.ip2location.com/database/px8-ip-proxytype-country-region-city-isp-domain-usagetype-asn-lastseen
 ```
-Download both database and move it to reconspier/plugins/.
+Download database, extract it and move to reconspider/plugins/ directory.
 
 
 # Usage
@@ -342,7 +337,6 @@ Do you want to have a conversation in private?
 # ReconSpider Full Wiki and How-to Guide
 
 Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/reconspider/wiki) for a detailed explanation of each and every option and feature.
-
 
 
 # Frequent & Seamless Updates

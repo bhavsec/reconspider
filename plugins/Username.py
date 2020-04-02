@@ -90,7 +90,7 @@ def Instagram(username):
         try:
             print("Business Category: "+res['edge_follow']['business_category_name'])
         except Exception as e:
-            print("Account :"+" Private")
+            print("Account :"+" Private" + str(e))
         finally:
             print("Biograph: " + res['biography'])
             print("URL: "+ str(res['external_url']))
@@ -115,28 +115,28 @@ def ScrapTweets(username):
         full_name = soup.find('a', attrs={"class": "ProfileHeaderCard-nameLink u-textInheritColor js-nav"})
         print("User Name --> " + full_name.text)
     except Exception as e:
-        print("User Name -->"+" Not Found")
+        print("User Name -->"+" Not Found" + str(e))
     print()
 
     try:
         user_id = soup.find('b', attrs={"class": "u-linkComplex-target"})
         print("User Id --> " + user_id.text)
     except Exception as e:
-        print("User Id --> "+"Not Found")
+        print("User Id --> "+"Not Found" + str(e))
     print()
 
     try:
         decription = soup.find('p', attrs={"class": "ProfileHeaderCard-bio u-dir"})
         print("Description --> " + decription.text)
     except Exception as e:
-        print("Decription not provided by the user")
+        print("Decription not provided by the user" + str(e))
     print()
 
     try:
         user_location = soup.find('span', attrs={"class": "ProfileHeaderCard-locationText u-dir"})
         print("Location -->  " + user_location.text.strip())
     except Exception as e:
-        print("Location not provided by the user")
+        print("Location not provided by the user" + str(e))
     print()
 
     try:
@@ -144,14 +144,14 @@ def ScrapTweets(username):
         tittle = connectivity.a["title"]
         print("Link provided by the user --> " + tittle)
     except Exception as e:
-        print("No contact link is provided by the user")
+        print("No contact link is provided by the user" + str(e))
     print()
 
     try:
         join_date = soup.find('span', attrs={"class": "ProfileHeaderCard-joinDateText js-tooltip u-dir"})
         print("The user joined twitter on --> " + join_date.text)
     except Exception as e:
-        print("The joined date is not provided by the user")
+        print("The joined date is not provided by the user" + str(e))
     print()
 
     try:
@@ -159,32 +159,32 @@ def ScrapTweets(username):
         birth_date = birth.span.text
         print("Date of Birth:"+birth_date.strip())
     except Exception as e:
-        print("Birth Date not provided by the user")
+        print("Birth Date not provided by the user" + str(e))
     print()
 
     try:
         span_box = soup.findAll('span', attrs={"class": "ProfileNav-value"})
         print("Total tweets --> " + span_box[0].text)
     except Exception as e:
-        print("Total Tweets --> Zero")
+        print("Total Tweets --> Zero" + str(e))
     print()
 
     try:
         print("Following --> " +span_box[1].text)
     except Exception as e:
-        print("Following --> Zero")
+        print("Following --> Zero" + str(e))
     print()
 
     try:
         print("Followers --> " + span_box[2].text)
     except Exception as e:
-        print("Followers --> Zero")
+        print("Followers --> Zero" + str(e))
     print()
 
     try:
         print("Likes send by him --> " + span_box[3].text)
     except Exception as e:
-        print("Likes send by him --> Zero")
+        print("Likes send by him --> Zero" + str(e))
     print()
 
     try:
@@ -193,10 +193,10 @@ def ScrapTweets(username):
         else:
             print("No. of parties he is Subscribed to --> Zero")
     except Exception as e:
-        print("No. of parties he is Subscribed to --> Zero")
+        print("No. of parties he is Subscribed to --> Zero" + + str(e))
     print()
 
-    spana = soup.findAll('span', attrs={"class": "ProfileNav-value"})
+    #spana = soup.findAll('span', attrs={"class": "ProfileNav-value"})
 
     print("Tweets by "+ username + " are --> ")
     # TweetTextSize TweetTextSize--normal js-tweet-text tweet-text

@@ -1,6 +1,5 @@
 import os
 import bs4
-import lxml
 import requests
 
 user_agent = {'User-Agent' : 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'}
@@ -53,8 +52,8 @@ def crawler(target,port):
 							url = url.strip()
 							total.append(url)
 							r_total.append(target + url)
-						except:
-							pass
+						except Exception as e:
+							print(e)
 					elif 'Allow' in entry:
 						url = entry.split(':')
 						try:
@@ -62,8 +61,8 @@ def crawler(target,port):
 							url = url.strip()
 							total.append(url)
 							r_total.append(target + url)
-						except:
-							pass
+						except Exception as e:
+							print(e)
 				r_total = set(r_total)
 				print('['.rjust(8, '.') + ' {} ]'.format(str(len(r_total))))
 
@@ -154,7 +153,7 @@ def crawler(target,port):
 					dumpfile.write('URL : {}'.format(target) + '\n\n')
 					try:
 						dumpfile.write('Title : {}'.format(soup.title.string) + '\n')
-					except AttributeError:
+					except AttributeError as e:
 						dumpfile.write('Title : None' + '\n')
 					dumpfile.write('\nrobots Links      : ' + str(len(r_total)))
 					dumpfile.write('\nsitemap Links     : ' + str(len(sm_total)))
@@ -164,6 +163,7 @@ def crawler(target,port):
 					dumpfile.write('\nExternal Links    : ' + str(len(ext_total)))
 					dumpfile.write('\nImages Links      : ' + str(len(img_total)))
 					dumpfile.write('\nTotal Links Found : ' + str(len(total)) + '\n')
+					print(str(e))
 
 					if len(r_total) is not 0:
 						dumpfile.write('\nrobots :\n\n')

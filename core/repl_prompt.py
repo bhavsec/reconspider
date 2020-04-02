@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-import socket
 
 from plugins.censys import censys_ip
 from plugins.dnsdump import dnsmap
@@ -118,7 +117,7 @@ def repl():  # Read–eval–print loop
                 break
             ip2Proxy(IP)
             continue
-        
+
         elif choice == 13:
             while 1:
                 emailaddress = prompt("MAIL ADDRESS (Eg:temp@gmail.com) >> ")

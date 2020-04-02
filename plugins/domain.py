@@ -12,11 +12,8 @@ from .webosint.header import header
 from .webosint.crawler import crawler
 from .webosint.who.whoami import whoami
 
-global host 
-global port
-
 # Checking whether the target host is alive or dead
-def CheckTarget():
+def CheckTarget(host,port):
     s =  socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     result = s.connect_ex((host, port))
 
@@ -26,15 +23,11 @@ def CheckTarget():
         return False
 
 # Main Method
-def domain(h,p):
-    global host
-    global port
-    host=h
-    port=p
+def domain(host,port):
 
-    if CheckTarget()==True:
+    if CheckTarget(host,port)==True:
         print("\nTarget Alive \n")
-        Menu()
+        Menu(host,port)
     else:
         print("The Host is Unreachable \n")
         exit()
@@ -47,7 +40,6 @@ NmapFunctions = {
 
 
 def nmaprec(host,port):
-
     Choice = 1
     while True:
         print("1. Scan Default Ports (22-443)")
@@ -58,7 +50,7 @@ def nmaprec(host,port):
         if (Choice >= 0) and (Choice < 3):
             NmapFunctions[Choice](host, port)
         elif Choice == 3:
-            Menu()
+            Menu(host,port)
         else:
             print("Please choose an Appropriate option")
 
@@ -80,7 +72,7 @@ def BruteForce(host, port):
         if (Selection >= 0) and (Selection < 3):
             BruteFunctions[Selection](host, port)
         elif Selection == 3:
-            Menu()
+            Menu(host,port)
         else:
             print("Please choose an Appropriate option")
 
@@ -100,7 +92,7 @@ MainFunctions = {
  12:whoami
 }
 
-def Menu():
+def Menu(host,port):
     Selection = 1
     while True:
         print('')
