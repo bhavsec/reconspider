@@ -110,7 +110,7 @@ ENTER 0 - 11 TO SELECT OPTIONS
 10. TORRENT                      Gather torrent download  history  of  IP
 11. USERNAME                     Extract Account info. from social  media
 12. IP2PROXY                     Check whether  IP  uses  any VPN / PROXY
-13. MAIL BREACH                  Check whethers given  mail  is  breached
+13. MAIL BREACH                  Checks given domain  has  breached  Mail
 99. UPDATE                       Update ReconSpider to its latest version
 
 0. EXIT                         Exit from  ReconSpider  to your terminal
@@ -297,10 +297,10 @@ IPADDRESS (Eg:192.168.1.1) >>
 
 **12. MAIL BREACH**
 
-This option allows you to identify whether provided mail has been breach in some website.
+This option allows you to identify all breached mail ID from given domain.
 ```
 Reconspider >> 13
-MAIL ADDRESS (Eg:temp@gmail.com) >>
+MAIL ADDRESS (Eg:intercom.io) >>
 ```
 
 **99. UPDATE**

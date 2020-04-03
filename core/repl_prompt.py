@@ -120,9 +120,9 @@ def repl():  # Read–eval–print loop
 
         elif choice == 13:
             while 1:
-                emailaddress = prompt("MAIL ADDRESS (Eg:temp@gmail.com) >> ")
+                domain = prompt("MAIL ADDRESS (Eg:intercom.io) >> ")
                 break
-            maildb(emailaddress)
+            maildb(domain)
             continue
 
         elif choice == 99:
