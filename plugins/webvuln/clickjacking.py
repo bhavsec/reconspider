@@ -11,9 +11,9 @@ def ClickJacking(host, port):
 
 
     url = (port+host)
-
-    data=urllib.request.urlretrieve(url)[1]
-    headers=data.as_string()
+    if url.lower().startswith('http'):
+        data=urllib.request.urlretrieve(url)[1]
+        headers=data.as_string()
 
     if not "X-Frame-Options" in headers:
           print("Website is vulnerable to ClickJacking")

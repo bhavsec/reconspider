@@ -105,9 +105,10 @@ def Instagram(username):
 def ScrapTweets(username):
 
     link = "https://twitter.com/" + username
-    the_client =  urllib.request.Request(link)
-    with urllib.request.urlopen(the_client) as response:
-        page_html = response.read()
+    if link.lower().startswith('http'):
+        the_client =  urllib.request.Request(link)
+        with urllib.request.urlopen(the_client) as response:
+            page_html = response.read()
     #the_client.close()
 
     soup = BeautifulSoup(page_html, 'html.parser')
