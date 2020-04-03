@@ -1,5 +1,4 @@
-from requests import get
-
+import requests
 
 def whois(wh):
     url = wh

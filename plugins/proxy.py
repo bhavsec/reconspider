@@ -33,7 +33,7 @@ def ip2Proxy(IP):
             response = r.json()
             print("Latitude :"+" {latitude}".format(**response))
             print("Longitude :"+" {longitude}".format(**response))
-            if input("Want More Whois Details (Y/N): "):
+            if input("Want More Whois Details (Y/N):") in ["Y","y"]:
                 whois_more(IP)
             if response['latitude'] and response['longitude']:
                 lats = response['latitude']
