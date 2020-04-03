@@ -120,7 +120,7 @@ def repl():  # Read–eval–print loop
 
         elif choice == 13:
             while 1:
-                web = prompt("MAIL ADDRESS (Eg:intercom.io) >> ")
+                web = prompt("DOMAIN (Eg:intercom.io) >> ")
                 break
             maildb(web)
             continue

@@ -300,7 +300,7 @@ IPADDRESS (Eg:192.168.1.1) >>
 This option allows you to identify all breached mail ID from given domain.
 ```
 Reconspider >> 13
-MAIL ADDRESS (Eg:intercom.io) >>
+DOMAIN (Eg:intercom.io) >>
 ```
 
 **99. UPDATE**

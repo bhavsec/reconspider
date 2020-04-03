@@ -12,7 +12,7 @@ def ClickJacking(host, port):
 
     url = (port+host)
 
-    data=urllib.request.urlretrieve("http://www.skcet.ac.in")[1]
+    data=urllib.request.urlretrieve(url)[1]
     headers=data.as_string()
 
     if not "X-Frame-Options" in headers:
