@@ -1,5 +1,4 @@
 import requests
-import json
 
 def maildb(emailaddress):
     if  ("@" and ".com") or ("@" and ".in") in emailaddress:

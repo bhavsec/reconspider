@@ -23,7 +23,7 @@ def crawler(target,port):
 	print ('\n' + '[+]' +  ' Crawling Target...'+ '\n')
 	try:
 		target=port+target
-		rqst = requests.get(target, headers=user_agent, verify=False, timeout=10)
+		rqst = requests.get(target, headers=user_agent, verify=True, timeout=10)
 		sc = rqst.status_code
 		if sc == 200:
 			domain = target.split('//')
@@ -36,7 +36,7 @@ def crawler(target,port):
 			sm_url = 'http://{}/sitemap.xml'.format(domain)
 
 			print( '[+]' + ' Looking for robots.txt' , end = '')
-			r_rqst = requests.get(r_url, headers=user_agent, verify=False, timeout=10)
+			r_rqst = requests.get(r_url, headers=user_agent, verify=True, timeout=10)
 			r_sc = r_rqst.status_code
 
 			if r_sc == 200:
@@ -72,7 +72,7 @@ def crawler(target,port):
 				print( '['.rjust(9, '.') + ' {} ]'.format(r_sc) )
 
 			print('[+]' + ' Looking for sitemap.xml' , end = '')
-			sm_rqst = requests.get(sm_url, headers=user_agent, verify=False, timeout=10)
+			sm_rqst = requests.get(sm_url, headers=user_agent, verify=True, timeout=10)
 			sm_sc = sm_rqst.status_code
 			if sm_sc == 200:
 				print('['.rjust(8, '.') + ' Found ]' )

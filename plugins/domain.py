@@ -114,7 +114,7 @@ def Menu(host,port):
         if (Selection >= 0) and (Selection <=12):
             MainFunctions[Selection](host, port)
         elif Selection == 99:
-            exit()
+            return
         else:
             print("Error: Please choose an Appropriate option")
         print('')

@@ -23,7 +23,7 @@ def repl():  # Read–eval–print loop
     while 1:
         user_input = prompt("\nReconspider >> ")
         if len(user_input)==0:
-            print("ENTER 1 - 7 TO SELECT OPTIONS")
+            print("ENTER 1 - 13 TO SELECT OPTIONS")
             continue
         try:
             choice = int(user_input)
