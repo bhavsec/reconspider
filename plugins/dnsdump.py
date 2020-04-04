@@ -6,13 +6,6 @@ import platform
 
 def dnsmap(dnsmap_inp):
     domain = dnsmap_inp
-    '''response = r.get('https://dnsdumpster.com/').text
-    csrf_token = re.search(r"name='csrfmiddlewaretoken' value='(.*?)'", response).group(1)
-
-    cookies = {'csrftoken': csrf_token}
-    headers = {'Referer': 'https://dnsdumpster.com/'}
-    data = {'csrfmiddlewaretoken': csrf_token, 'targetip': domain}
-    response = r.post('https://dnsdumpster.com/', cookies=cookies, data=data, headers=headers)'''
 
     image = requests.get('https://dnsdumpster.com/static/map/%s.png' % domain)
 
