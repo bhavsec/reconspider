@@ -6,7 +6,6 @@ import platform
 
 def dnsmap(dnsmap_inp):
     domain = dnsmap_inp
-    r=requests.Session()
     '''response = r.get('https://dnsdumpster.com/').text
     csrf_token = re.search(r"name='csrfmiddlewaretoken' value='(.*?)'", response).group(1)
 
