@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import urllib.request
 
 out=[]
 
@@ -105,11 +104,8 @@ def Instagram(username):
 def ScrapTweets(username):
 
     link = "https://twitter.com/" + username
-    the_client =  urllib.request.Request(link)
-    with urllib.request.urlopen(the_client) as response:
-        page_html = response.read()
-    #the_client.close()
 
+    page_html=requests.get(link).content
     soup = BeautifulSoup(page_html, 'html.parser')
 
     try:

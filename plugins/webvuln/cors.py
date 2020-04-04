@@ -19,7 +19,7 @@ def Cors(host, port):
     print("1. CORS check in Default Host")
     print("2. CORS check in Host's Custom Endpoint")
     print('')
-    choice = int(input('root@osint:~/Domain/CORS#'))
+    choice = int(input('CORS >>'))
     print('')
     cookies = input("Paste the Cookies (If None,then hit enter) : ")
     global header1

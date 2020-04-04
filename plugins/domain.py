@@ -4,7 +4,7 @@ from .webosint.nslookup import nsLookup
 from .webosint.portscan import DefaultPort,Customrange
 from .webosint.reverseip import ReverseIP
 from .webosint.subdomain import SubDomain
-from .webvuln.bruteforce import ssh,ftp
+from .webvuln.bruteforce import ssh
 from .webvuln.clickjacking import ClickJacking
 from .webvuln.cors import Cors
 from .webvuln.hostheader import HostHeader
@@ -54,27 +54,11 @@ def nmaprec(host,port):
         else:
             print("Please choose an Appropriate option")
 
-BruteFunctions = {
-        1: ssh,
-        2: ftp
-    }
+BruteFunctions = {1: ssh}
 
 def BruteForce(host, port):
-    Selection = 1
-    while True:
-        print('')
-        print("1. SSH")
-        print("2. FTP")
-        print("3. Main Menu")
-        print('')
-        Selection = int(input("BruteForce >> "))
-        print('')
-        if (Selection >= 0) and (Selection < 3):
-            BruteFunctions[Selection](host, port)
-        elif Selection == 3:
-            Menu(host,port)
-        else:
-            print("Please choose an Appropriate option")
+    print("\nBrute Forcing SSH")
+    BruteFunctions[1](host,port)
 
 
 MainFunctions = {

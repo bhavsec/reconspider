@@ -1,7 +1,6 @@
 import sys
 from requests import get
 from core.config import shodan_api
-from core.colors import bad, info, red, green, end
 
 
 def honeypot(inp):
@@ -11,10 +10,11 @@ def honeypot(inp):
     except:
         result = None
         sys.stdout.write('\n%s No information available' % bad + '\n')
-    if result:
-        if float(result) < 0.5:
-            color = green
-        else:
-            color = red
-        probability = str(float(result) * 10)
-        print('\n%sHoneypot Probabilty: %s%s%%%s' % (info, color, probability, end) + '\n')
+    if "error" in result or "404" in result:
+        print("IP Not found")
+        return
+    elif result:
+            probability = str(float(result) * 10)
+            print('\n[+] Honeypot Probabilty: %s%%' % (probability) + '\n')
+    else:
+        print("Something went Wrong")

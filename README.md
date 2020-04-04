@@ -96,7 +96,7 @@ __________                               _________       __     ___
                       developer: https://bhavkaran.com
 
 
-ENTER 0 - 11 TO SELECT OPTIONS
+ENTER 0 - 13 TO SELECT OPTIONS
 
 1.  IP                           Enumerate  information  from  IP Address
 2.  DOMAIN                       Gather  information  about  given DOMAIN
@@ -295,7 +295,7 @@ Reconspider >> 12
 IPADDRESS (Eg:192.168.1.1) >>
 ```
 
-**12. MAIL BREACH**
+**13. MAIL BREACH**
 
 This option allows you to identify all breached mail ID from given domain.
 ```

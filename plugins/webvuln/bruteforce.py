@@ -1,6 +1,5 @@
 import paramiko
 import socket
-from ftplib import FTP
 
 def ssh(host, port):
     print("1. Default Port (22)")
@@ -114,60 +113,3 @@ def ssh(host, port):
                         print("Invalid Credentials")
         except socket.error as e:
             print("Error : %s" % e)
-
-
-
-
-
-def ftp(host, port):
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    port = 21
-    s.settimeout(10)
-    try:
-        connect = s.connect_ex((host, port))
-        if connect != 0:
-            print("[+] Port %s: Closed" % port)
-            s.close()
-
-        elif connect == 0:
-            print("[+] Port %s: Open" % port)
-            s.close()
-            wordlist = input("Enter Wordlist location (Press Enter for Default Wordlist) : ")
-            if wordlist == '':
-                f = open("src/ftp.ini", "r")
-                f1 = f.readlines()
-            else:
-                f = open(wordlist, "r")
-                f1 = f.readlines()
-            for x in f1:
-                y = x.split(':')
-                username = y[0].strip(":")
-                password = y[1].strip("\n")
-                ftp = FTP(host)
-                print("Checking with Username : %s , Password : %s" % (username, password))
-                try:
-                    ftp.login(user='username', passwd='password')
-                    flag = 0
-
-                except socket.error as e:
-                    flag = 2
-                    print(e)
-
-                except KeyboardInterrupt:
-                    print("\n User Interrupt! Exitting...")
-                    exit()
-
-                except Exception as e:
-                    flag = 1
-
-                if flag == 0:
-                    print('')
-                    print("Credentials Found")
-                    print("Username : %s" % username)
-                    print("Password : %s" % password)
-                    print('')
-                elif flag == 1:
-                    print("Invalid Credentials")
-
-    except socket.error as e:
-        print("Error : %s" %e)
