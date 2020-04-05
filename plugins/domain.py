@@ -11,6 +11,7 @@ from .webvuln.hostheader import HostHeader
 from .webosint.header import header
 from .webosint.crawler import crawler
 from .webosint.who.whoami import whoami
+from .plugins.portscan import PortScan
 
 # Checking whether the target host is alive or dead
 def CheckTarget(host,port):
@@ -40,19 +41,23 @@ NmapFunctions = {
 
 
 def nmaprec(host,port):
-    Choice = 1
-    while True:
-        print("1. Scan Default Ports (22-443)")
-        print("2. Enter Custom Range")
-        print("3. Back to Main Menu")
-        print('')
-        Choice = int(input(">> "))
-        if (Choice >= 0) and (Choice < 3):
-            NmapFunctions[Choice](host, port)
-        elif Choice == 3:
-            Menu(host,port)
-        else:
-            print("Please choose an Appropriate option")
+    try:
+        Choice = 1
+        while True:
+            print("1. Scan Default Ports (22-443)")
+            print("2. Enter Custom Range")
+            print("3. Back to Main Menu")
+            print('')
+            Choice = int(input(">> "))
+            if (Choice >= 0) and (Choice < 3):
+                NmapFunctions[Choice](host, port)
+            elif Choice == 3:
+                Menu(host,port)
+            else:
+                print("Please choose an Appropriate option")
+    except AttributeError:
+        PortScan(host)
+
 
 BruteFunctions = {1: ssh}
 

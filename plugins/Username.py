@@ -37,18 +37,22 @@ def user(choice,username):
     ###Finding About the user details
     #finding work details of the user
     def find_eduwork_details():
-        education = soup.find(id="pagelet_eduwork")
-        apple=education.find(attrs={"class":"_4qm1"})
-        if (apple.get_text() != " "):
-            for category in education.find_all(attrs={"class":"_4qm1"}):
-                print(category.find('span').get_text() + " : ")
-                for company in category.find_all(attrs={"class":"_2tdc"}):
-                    if (company.get_text() != " "):
-                        print(company.get_text())
-                    else:
-                        continue
-        else:
-            print("No work details found")
+        try:
+            education = soup.find(id="pagelet_eduwork")
+            apple=education.find(attrs={"class":"_4qm1"})
+            if (apple.get_text() != " "):
+                for category in education.find_all(attrs={"class":"_4qm1"}):
+                    print(category.find('span').get_text() + " : ")
+                    for company in category.find_all(attrs={"class":"_2tdc"}):
+                        if (company.get_text() != " "):
+                            print(company.get_text())
+                        else:
+                            continue
+            else:
+                print("No work details found")
+        except Exception as e:
+            print(str(e))
+        print()
 
     #finding home details of the user
     def find_home_details():

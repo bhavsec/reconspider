@@ -7,6 +7,7 @@ def HostHeader(host, port):
         port = 'https://'
     else:
         print("Could'nt fetch data for the given PORT")
+        return
     url = (port + host)
     headers = {'Host': 'http://evil.com'}
     response = requests.get(url, headers=headers)

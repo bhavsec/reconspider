@@ -28,7 +28,7 @@ def repl():  # Read–eval–print loop
         try:
             choice = int(user_input)
         except ValueError:
-            print("ENTER 1 - 7 TO SELECT OPTIONS")
+            print("ENTER 1 - 13 TO SELECT OPTIONS")
             continue
 
         if choice == 1:
