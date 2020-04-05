@@ -1,5 +1,6 @@
 from setuptools import setup
 import os
+import pip
 
 fout = open("core/config.py", "w")
 fout.write("shodan_api = " + '"' + "C23OXE0bVMrul2YeqcL7zxb6jZ4pj2by" + '"' + "\n")
@@ -16,8 +17,10 @@ setup(
     install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","nmap","pythonping","whois","gmplot","pillow"],
     console=["reconspider.py"],
 )
-
-import wget
+try:
+    import wget
+except:
+    pip.main(['install','wget'])
 
 #Database
 url="https://www.ip2location.com/download?token=hg5uYe2Jvri4R7P1j8b71Pk8dnvIU2M6A9jz2tvcVtGx8ZK2UPQgzr6Hk3cV68oH&file=PX8LITEBIN"
