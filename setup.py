@@ -13,7 +13,7 @@ setup(
     author="BhavKaran (@bhavsec)",
     author_email="contact@bhavkaran.com",
     license="GPL-3.0",
-    install_requires=["shodan", "requests", "prompt_toolkit","beautifulsoup4","urllib3","IP2proxy","wget","paramiko","h8mail"],
+    install_requires=["shodan", "requests","prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","pillow"],
     console=["reconspider.py"],
 )
 

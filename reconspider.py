@@ -39,3 +39,10 @@ if sys.version_info[0] > 2:
        except ModuleNotFoundError:
               print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
               quit()
+else:
+       try:
+              print(banner())
+              from core import repl_prompt
+       except ImportError:
+              print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
+              quit()
