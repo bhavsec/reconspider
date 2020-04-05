@@ -17,9 +17,11 @@ setup(
     install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","nmap","pythonping","whois","gmplot","pillow"],
     console=["reconspider.py"],
 )
+
 try:
     import wget
-except:
+except Exception as e:
+    print(e)
     pip.main(['install','wget'])
 
 #Database
