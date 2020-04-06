@@ -11,7 +11,7 @@ from .webvuln.hostheader import HostHeader
 from .webosint.header import header
 from .webosint.crawler import crawler
 from .webosint.who.whoami import whoami
-from .plugins.portscan import PortScan
+from .portscan import PortScan
 
 # Checking whether the target host is alive or dead
 def CheckTarget(host,port):
