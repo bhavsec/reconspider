@@ -17,18 +17,20 @@ from plugins.maildb import maildb
 from plugins.Username import user
 from core.updater import update
 from prompt_toolkit import prompt
+from reconspider import menu
 
 
 def repl():  # Read–eval–print loop
     while 1:
+        print(menu())
         user_input = prompt("\nReconspider >> ")
         if len(user_input)==0:
-            print("ENTER 1 - 13 TO SELECT OPTIONS")
+            print("\n")
             continue
         try:
             choice = int(user_input)
         except ValueError:
-            print("ENTER 1 - 13 TO SELECT OPTIONS")
+            print("\n")
             continue
 
         if choice == 1:
@@ -42,9 +44,17 @@ def repl():  # Read–eval–print loop
         elif choice == 2:
             while 1:
                 host = input("HOST (URL / IP) >> ")
-                port = int(input("PORT >> "))
+                port = input("PORT >> ")
+                try:
+                    if port == "":
+                        port=80
+                    elif port not in [80,443]:
+                        print("Invalid port - Available(80,443)")
+                        continue
+                except ValueError:
+                    port=80
                 break
-            domain(host,port)
+            domain(host,int(port))
             continue
 
         elif choice == 3:

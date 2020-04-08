@@ -1,7 +1,7 @@
 import sys
 
 def banner():
-       return("""
+       return ("""
 __________                               _________       __     ___
 \______   \ ____   ____  ____   ____    /   _____/_____ |__| __| _/___________
  |       _// __ \_/ ___\/  _ \ /    \   \_____  \\\____ \|  |/ __ |/ __ \_  __ \\
@@ -9,9 +9,9 @@ __________                               _________       __     ___
  |____|_  /\___  >\___  >____/|___|  / /_______  /   __/|__\____ |\___  >__|
         \/     \/     \/           \/          \/|__|           \/    \/
 
-                      developer: https://bhavkaran.com
-
-
+                      developer: https://bhavkaran.com""")
+def menu():
+    return ("""
 ENTER 0 - 13 TO SELECT OPTIONS
 
 1.  IP                           Enumerate  information  from  IP Address
@@ -32,17 +32,17 @@ ENTER 0 - 13 TO SELECT OPTIONS
 0. EXIT                         Exit from  ReconSpider  to your terminal
        """)
 
-if sys.version_info[0] > 2:
-       try:
-              print(banner())
-              from core import repl_prompt
-       except ModuleNotFoundError:
-              print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
-              quit()
-else:
-       try:
-              print(banner())
-              from core import repl_prompt
-       except ImportError:
-              print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
-              quit()
+if __name__ == '__main__':
+    if sys.version_info[0] > 2:
+           try:
+                  print(banner())
+                  from core import repl_prompt
+           except ModuleNotFoundError:
+                  print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
+                  quit()
+    else:
+           try:
+                  from core import repl_prompt
+           except ImportError:
+                  print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
+                  quit()
