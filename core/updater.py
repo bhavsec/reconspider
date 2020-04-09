@@ -26,10 +26,10 @@ def update():
         currentPath = os.getcwd().split('/')  # if you know it, you know it
         folder = currentPath[-1]  # current directory name
         path = '/'.join(currentPath)  # current directory path
-        
+
         if sys.version_info[0] > 2:
             choice = input('\n%s Would you like to update? [Y/n] ' % que).lower()
-        
+
         else:
             choice = raw_input('\n%s Would you like to update? [Y/n] ' % que).lower()
 

@@ -1,4 +1,6 @@
 from setuptools import setup
+import os
+import pip
 
 fout = open("core/config.py", "w")
 fout.write("shodan_api = " + '"' + "C23OXE0bVMrul2YeqcL7zxb6jZ4pj2by" + '"' + "\n")
@@ -12,6 +14,26 @@ setup(
     author="BhavKaran (@bhavsec)",
     author_email="contact@bhavkaran.com",
     license="GPL-3.0",
-    install_requires=["shodan", "requests", "prompt_toolkit"],
+    install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","nmap","pythonping","whois","gmplot","pillow","lxml"],
     console=["reconspider.py"],
 )
+
+try:
+    import wget
+except Exception as e:
+    print(e)
+    pip.main(['install','wget'])
+    import wget
+#Database
+url="https://www.ip2location.com/download?token=hg5uYe2Jvri4R7P1j8b71Pk8dnvIU2M6A9jz2tvcVtGx8ZK2UPQgzr6Hk3cV68oH&file=PX8LITEBIN"
+print('\nDownloading IP2PROXY-IP-PROXYTYPE-COUNTRY-REGION-CITY-ISP-DOMAIN-USAGETYPE-ASN-LASTSEEN.BIN...')
+filepath=os.getcwd()+"/plugins/"
+wget.download(url,out=filepath)
+print('\nDownload Finished')
+
+import zipfile
+print('\nExtracting Files')
+with zipfile.ZipFile(filepath+"IP2PROXY-LITE-PX8.BIN.ZIP","r") as zip_ref:
+    zip_ref.extract("IP2PROXY-LITE-PX8.BIN",filepath)
+
+print("\nInstallation Successfull")
