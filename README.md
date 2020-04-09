@@ -151,7 +151,7 @@ Step 3 - Installing all dependencies.
 Once you clone and check python installation, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
 ```
 cd reconspider
-sudo python setup.py install
+sudo python3 setup.py install
 ```
 
 
@@ -174,7 +174,7 @@ Step 2 - Installing all dependencies.
 
 After unzipping, go to that directory using Command Prompt and type the following command.
 ```
-python setup.py install
+python3 setup.py install
 ```
 
 Step 3 - Database
@@ -192,7 +192,7 @@ Download database, extract it and move to reconspider/plugins/ directory.
 ReconSpider is very handy tool and easy to use. All you have to do is just have to pass values to parameter.
 In order to start ReconSpider just type:
 ```
-python reconspider.py
+python3 reconspider.py
 ```
 
 **1. IP**
