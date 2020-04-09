@@ -6,6 +6,19 @@ fout = open("core/config.py", "w")
 fout.write("shodan_api = " + '"' + "C23OXE0bVMrul2YeqcL7zxb6jZ4pj2by" + '"' + "\n")
 fout.close()
 
+fout = open("plugins/api.py", "w")
+fout.write("def phoneapis():"+ "\n")
+fout.write("    api= "+ '"' + "2f8c8e865a0b25bbf4da08c4db039b8d" + '"' + "\n")
+fout.write("    return str(api)"+ "\n")
+fout.write("def ipstack():"+ "\n")
+fout.write("    api="+ '"' +"276cfee2c31729505691e515e8321a02"+ '"' + "\n")
+fout.write("    return str(api)"+ "\n")
+fout.write("def gmap():"+ "\n")
+fout.write("    api="+ '"' +"AIzaSyAKGik6Fok3_mbIsgquaAnDGNy-h_AjhVw"+ '"' + "\n")
+fout.write("    return str(api)"+ "\n")
+fout.close()
+
+
 setup(
     name="ReconSpider",
     version="1.0.5",
