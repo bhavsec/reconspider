@@ -55,7 +55,7 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 
 # Version (beta)
 
-  	ReconSpider   :     1.0.5
+  	ReconSpider   :     1.0.6
 
 
 # Overview of the tool:
@@ -138,10 +138,17 @@ In order to download ReconSpider simply clone the github repository. Below is th
 git clone https://github.com/bhavsec/reconspider.git
 ```
 
+Step 2 - Make sure python3 and python3-pip is installed on your system.
 
-Step 2 - Installing all dependencies.
+You can also perform a check by typing this command in your terminal.
 
-Once you clone, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
+```
+sudo apt install python3 python3-pip
+```
+
+Step 3 - Installing all dependencies.
+
+Once you clone and check python installation, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
 ```
 cd reconspider
 sudo python setup.py install
@@ -348,6 +355,7 @@ If you would like to see features and issues that are being worked on, you can d
 
 # Special Thanks
 
+* [Adithyan AK](https://github.com/adithyan-ak)
 * [S0md3v](https://github.com/s0md3v/)
 * [Parshant](mailto:parshant.dhall@gmail.com)
-* [Adithyan AK](https://github.com/adithyan-ak)
+
