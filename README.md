@@ -5,7 +5,7 @@
 <h4 align="center"> Most Advanced Open Source Intelligence (OSINT) Framework </h4>
 
 <p align="center">
-<a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/badge/release-1.0.5%20(beta)-blue.svg">
+<a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/badge/release-1.0.6%20(beta)-blue.svg">
 <a href="https://travis-ci.com/bhavsec/reconspider"><img src="https://api.travis-ci.com/bhavsec/reconspider.svg"></a>
 <a class="badge-align" href="https://www.codacy.com/app/bhavsec/reconspider?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bhavsec/reconspider&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/107277982d6a4f2b9c55bba0d66d8051"/></a>
 
@@ -19,7 +19,7 @@ ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters
 
 ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data.
 
-Recon Spider also combines the capabilities of [Wave](https://github.com/adithyan-ak/WAVE) ,[Photon](https://github.com/s0md3v/Photon) and [Recon Dog](https://github.com/s0md3v/ReconDog) to do a comprehensive enumeration of attack surface.
+Recon Spider also combines the capabilities of [Wave](https://github.com/adithyan-ak/WAVE),[Photon](https://github.com/s0md3v/Photon) and [Recon Dog](https://github.com/s0md3v/ReconDog) to do a comprehensive enumeration of attack surface.
 
 # Why it's called ReconSpider ?
 
@@ -55,7 +55,7 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 
 # Version (beta)
 
-  	ReconSpider   :     1.0.5
+  	ReconSpider   :     1.0.6
 
 
 # Overview of the tool:
@@ -138,10 +138,17 @@ In order to download ReconSpider simply clone the github repository. Below is th
 git clone https://github.com/bhavsec/reconspider.git
 ```
 
+Step 2 - Make sure python3 and python3-pip is installed on your system.
 
-Step 2 - Installing all dependencies.
+You can also perform a check by typing this command in your terminal.
 
-Once you clone, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
+```
+sudo apt install python3 python3-pip
+```
+
+Step 3 - Installing all dependencies.
+
+Once you clone and check python installation, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
 ```
 cd reconspider
 sudo python setup.py install
@@ -348,6 +355,7 @@ If you would like to see features and issues that are being worked on, you can d
 
 # Special Thanks
 
+* [Adithyan AK](https://github.com/adithyan-ak)
 * [S0md3v](https://github.com/s0md3v/)
 * [Parshant](mailto:parshant.dhall@gmail.com)
-* [Adithyan AK](https://github.com/adithyan-ak)
+
