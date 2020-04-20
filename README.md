@@ -355,7 +355,7 @@ If you would like to see features and issues that are being worked on, you can d
 
 # Special Thanks
 
-* [Aravindha Hariharan M](https://instagram.com/aravindha_vfx)
+* [Aravindha Hariharan M](https://instagram.com/aravindha_hariharan)
 * [Adithyan AK](https://github.com/adithyan-ak)
 * [S0md3v](https://github.com/s0md3v/)
 * [Parshant](mailto:parshant.dhall@gmail.com)
