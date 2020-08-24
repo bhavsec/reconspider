@@ -8,7 +8,7 @@ fout.close()
 
 fout = open("plugins/api.py", "w")
 fout.write("def phoneapis():"+ "\n")
-fout.write("    api= "+ '"' + "2f8c8e865a0b25bbf4da08c4db039b8d" + '"' + "\n")
+fout.write("    api= "+ '"' + "e01791e4d18fbbdfa0c9033bf207decd,2f8c8e865a0b25bbf4da08c4db039b8d" + '"' + "\n")
 fout.write("    return str(api)"+ "\n")
 fout.write("def ipstack():"+ "\n")
 fout.write("    api="+ '"' +"276cfee2c31729505691e515e8321a02"+ '"' + "\n")

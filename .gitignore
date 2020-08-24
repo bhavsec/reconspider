@@ -34,11 +34,7 @@ MANIFEST
 
 # Installer logs
 pip-log.txt
-output.txt
 pip-delete-this-directory.txt
-plugins/log
-plugins/output.csv
-plugins/output.log
 
 # Unit test / coverage reports
 htmlcov/
@@ -114,6 +110,4 @@ core/config.py
 # vscode settings
 .vscode/
 
-# database
-plugins/IP2PROXY-LITE-PX8.BIN.ZIP
 plugins/IP2PROXY-LITE-PX8.BIN

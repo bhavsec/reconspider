@@ -5,7 +5,7 @@
 <h4 align="center"> Most Advanced Open Source Intelligence (OSINT) Framework </h4>
 
 <p align="center">
-<a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/badge/release-1.0.6%20(beta)-blue.svg">
+<a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/github/v/release/bhavsec/reconspider">
 <a href="https://travis-ci.com/bhavsec/reconspider"><img src="https://api.travis-ci.com/bhavsec/reconspider.svg"></a>
 <a class="badge-align" href="https://www.codacy.com/app/bhavsec/reconspider?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bhavsec/reconspider&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/107277982d6a4f2b9c55bba0d66d8051"/></a>
 
@@ -151,7 +151,7 @@ Step 3 - Installing all dependencies.
 Once you clone and check python installation, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
 ```
 cd reconspider
-sudo python3 setup.py install
+sudo python setup.py install
 ```
 
 
@@ -174,7 +174,7 @@ Step 2 - Installing all dependencies.
 
 After unzipping, go to that directory using Command Prompt and type the following command.
 ```
-python3 setup.py install
+python setup.py install
 ```
 
 Step 3 - Database
@@ -192,7 +192,7 @@ Download database, extract it and move to reconspider/plugins/ directory.
 ReconSpider is very handy tool and easy to use. All you have to do is just have to pass values to parameter.
 In order to start ReconSpider just type:
 ```
-python3 reconspider.py
+python reconspider.py
 ```
 
 **1. IP**
@@ -355,7 +355,7 @@ If you would like to see features and issues that are being worked on, you can d
 
 # Special Thanks
 
-* [Aravindha Hariharan M](https://instagram.com/aravindha_hariharan)
 * [Adithyan AK](https://github.com/adithyan-ak)
 * [S0md3v](https://github.com/s0md3v/)
 * [Parshant](mailto:parshant.dhall@gmail.com)
+

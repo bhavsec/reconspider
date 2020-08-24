@@ -59,7 +59,7 @@ def repl():  # Read–eval–print loop
 
         elif choice == 3:
             while 1:
-                ph = prompt("PHONE NUMBER (919485247632) >> ")
+                ph = prompt("PHONE NUMBER (with CountryCode example) >> ")
                 break
             Phonenumber(ph)
             continue

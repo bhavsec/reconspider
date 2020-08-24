@@ -1,0 +1,75 @@
+% [whois.apnic.net]
+% Whois data copyright terms    http://www.apnic.net/db/dbcopyright.html
+
+% Information related to '182.72.162.0 - 182.72.162.63'
+
+% Abuse contact for '182.72.162.0 - 182.72.162.63' is 'ipspamsupport@airtel.com'
+
+inetnum:        182.72.162.0 - 182.72.162.63
+netname:        KRCF-1933857-Coimbatore
+descr:          KUMARAGURU COLLEGE OF TEC
+descr:          n/a
+descr:          KUMARAGURU COLLEGE OF TECHNOLOGY THUDIYALUR
+descr:          ROAD SARAVANAMPATTI COIMBATORE-641035
+descr:          Coimbatore
+descr:          TAMIL NADU
+descr:          India
+descr:          Contact Person: N SIVARAMAKRISHNAN
+descr:          Email: sivaramakrishnan.n.support@kct.ac.in
+descr:          Phone: 9789559327
+country:        IN
+admin-c:        NA40-AP
+tech-c:         NA40-AP
+mnt-by:         MAINT-IN-BBIL
+mnt-irt:        IRT-BHARTI-IN
+status:         ASSIGNED NON-PORTABLE
+last-modified:  2017-02-27T10:46:40Z
+source:         APNIC
+
+irt:            IRT-BHARTI-IN
+address:        Bharti Airtel Ltd.
+address:        ISP Division - Transport Network Group
+address:        234 , Okhla Industrial Estate,
+address:        Phase III, New Delhi-110020, INDIA
+e-mail:         ipspamsupport@airtel.com
+abuse-mailbox:  ipspamsupport@airtel.com
+admin-c:        NA40-AP
+tech-c:         NA40-AP
+auth:           # Filtered
+remarks:        ipspamsupport@airtel.com was validated on 2019-12-14
+mnt-by:         MAINT-IN-BBIL
+last-modified:  2019-12-14T08:39:37Z
+source:         APNIC
+
+person:         Network Administrator
+nic-hdl:        NA40-AP
+e-mail:         noc-dataprov@airtel.com
+address:        Bharti Airtel Ltd.
+address:        ISP Division - Transport Network Group
+address:        Plot no.16 , Udyog Vihar , Phase -IV , Gurgaon - 122015 , Haryana , INDIA
+address:        Phase III, New Delhi-110020, INDIA
+phone:          +91-124-4222222
+fax-no:         +91-124-4244017
+country:        IN
+mnt-by:         MAINT-IN-BBIL
+last-modified:  2018-12-18T12:52:19Z
+source:         APNIC
+
+% Information related to '182.72.162.0/24AS9498'
+
+route:          182.72.162.0/24
+descr:          BHARTI-IN
+descr:          Bharti Airtel Limited
+descr:          Class A ISP in INDIA .
+descr:          Plot No. CP-5,sector-8,
+descr:          IMT Manesar
+descr:          INDIA
+country:        IN
+origin:         AS9498
+mnt-by:         MAINT-IN-BBIL
+last-modified:  2010-05-15T09:59:58Z
+source:         APNIC
+
+% This query was served by the APNIC Whois Service version 1.88.15-46 (WHOIS-JP3)
+
+
