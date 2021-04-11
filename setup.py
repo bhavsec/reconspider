@@ -21,7 +21,7 @@ fout.close()
 
 setup(
     name="ReconSpider",
-    version="1.0.5",
+    version="1.0.6",
     description="Most Advanced OSINT Framework",
     url="https://github.com/bhavsec/reconspider/",
     author="BhavKaran (@bhavsec)",
