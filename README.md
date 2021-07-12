@@ -33,8 +33,7 @@ Reconnaissance is a mission to obtain information by various detection methods, 
 
 A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering).
 
-
-
+  
 # Table Of Contents
 
 1. [Version (beta)](https://github.com/bhavsec/reconspider#version-beta)
@@ -63,6 +62,13 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 * Use specific script / launch automated OSINT for consolidated data.
 * Currently available in only Command Line Interface (CLI).
 
+
+# Mind Map (v1)
+
+Check out our mind map to see visually organize information of this tool regarding api, services and techniques and more.
+```
+http://bhavsec.com/img/reconspider_map.png
+```
 
 
 # License Information
