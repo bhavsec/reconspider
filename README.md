@@ -1,6 +1,4 @@
-<h1 align="center">
-<a href="https://github.com/bhavsec/reconspider"><img src="http://bhavkaran.com/reconspider/reconspider.png" alt="ReconSpider" height="200" width="200"></a>
-</h1>
+
 
 <h4 align="center"> Most Advanced Open Source Intelligence (OSINT) Framework </h4>
 
@@ -64,15 +62,6 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 * Correlates and collaborate the results, show them in a consolidated manner.
 * Use specific script / launch automated OSINT for consolidated data.
 * Currently available in only Command Line Interface (CLI).
-
-
-
-# Mind Map (v1)
-
-Check out our mind map to see visually organize information of this tool regarding api, services and techniques and more.
-```
-http://bhavkaran.com/reconspider/mindmap.html
-```
 
 
 
