@@ -1,4 +1,6 @@
-
+<h1 align="center">
+<img src="https://raw.githubusercontent.com/bhavsec/reconspider/master/logo.png" width="200">
+</h1>
 
 <h4 align="center"> Most Advanced Open Source Intelligence (OSINT) Framework </h4>
 
@@ -17,7 +19,7 @@ ReconSpider can be used by Infosec Researchers, Penetration Testers, Bug Hunters
 
 ReconSpider aggregate all the raw data, visualize it on a dashboard and facilitate alerting and monitoring on the data.
 
-Recon Spider also combines the capabilities of [Wave](https://github.com/adithyan-ak/WAVE),[Photon](https://github.com/s0md3v/Photon) and [Recon Dog](https://github.com/s0md3v/ReconDog) to do a comprehensive enumeration of attack surface.
+Recon Spider also combines the capabilities of [Wave](https://github.com/adithyan-ak/WAVE), [Photon](https://github.com/s0md3v/Photon) and [Recon Dog](https://github.com/s0md3v/ReconDog) to do a comprehensive enumeration of attack surface.
 
 # Why it's called ReconSpider ?
 
@@ -330,7 +332,7 @@ Do you want to have a conversation in private?
     Facebook:           fb.com/bhavsec
     Instagram:          instagram.com/bhavsec
     LinkedIn:           linkedin.com/in/bhavsec
-    Email:              contact@bhavkaran.com
+    Email:              bhavsec@gmail.com
     Website:            bhavkaran.com
 
 
