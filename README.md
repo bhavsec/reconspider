@@ -69,7 +69,7 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 
 Check out our mind map to see visually organize information of this tool regarding api, services and techniques and more.
 ```
-http://bhavsec.com/img/reconspider_map.png
+https://bhavsec.com/img/reconspider_map.png
 ```
 
 
@@ -170,7 +170,7 @@ Step 2 - Installing all dependencies.
 
 After unzipping, go to that directory using Command Prompt and type the following command.
 ```
-python setup.py install
+python3 setup.py install
 ```
 
 Step 3 - Database
@@ -188,7 +188,7 @@ Download database, extract it and move to reconspider/plugins/ directory.
 ReconSpider is very handy tool and easy to use. All you have to do is just have to pass values to parameter.
 In order to start ReconSpider just type:
 ```
-python reconspider.py
+python3 reconspider.py
 ```
 
 **1. IP**
@@ -333,7 +333,7 @@ Do you want to have a conversation in private?
     Instagram:          instagram.com/bhavsec
     LinkedIn:           linkedin.com/in/bhavsec
     Email:              bhavsec@gmail.com
-    Website:            bhavkaran.com
+    Website:            bhavsec.com
 
 
 
