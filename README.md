@@ -147,7 +147,7 @@ Step 3 - Installing all dependencies.
 Once you clone and check python installation, you will find directory name as **reconspider**. Just go to that directory and install using these commands:
 ```
 cd reconspider
-sudo python setup.py install
+sudo python3 setup.py install
 ```
 
 
