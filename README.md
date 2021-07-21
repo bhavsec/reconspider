@@ -5,8 +5,8 @@
 <h4 align="center"> Most Advanced Open Source Intelligence (OSINT) Framework </h4>
 
 <p align="center">
-<a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/static/v1?label=version&message=1.0.7&color=blue"></a>
-<a href="https://github.com/bhavsec/reconspider/releases"><img src="https://img.shields.io/github/issues-closed/bhavsec/reconspider?color=orange"></a>
+<a href="https://github.com/bhavsec/reconspider"><img src="https://img.shields.io/static/v1?label=version&message=1.0.7&color=blue"></a>
+<a href="https://github.com/bhavsec/reconspider/issues?q=is:issue+is:closed"><img src="https://img.shields.io/github/issues-closed/bhavsec/reconspider?color=orange"></a>
 <a href="https://travis-ci.com/bhavsec/reconspider"><img src="https://api.travis-ci.com/bhavsec/reconspider.svg"></a>
 
 
