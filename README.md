@@ -26,12 +26,12 @@ Recon Spider also combines the capabilities of [Wave](https://github.com/adithya
 ```ReconSpider```  =  ```Recon```  +  ```Spider```
 
 
-<b>Recon = Reconnaissance</b>
+**Recon** = **Reconnaissance**
 
 Reconnaissance is a mission to obtain information by various detection methods, about the activities and resources of an enemy or potential enemy, or geographic characteristics of a particular area.
 
 
-<b>Spider = Web crawler</b>
+**Spider = Web crawler**
 
 A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web, typically for the purpose of Web indexing (web spidering).
 
@@ -44,8 +44,8 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 4. [License Information](https://github.com/bhavsec/reconspider#license-information)
 5. [ReconSpider Banner](https://github.com/bhavsec/reconspider#reconspider-banner)
 6. [Documentation](https://github.com/bhavsec/reconspider#documentation)
-7. [Setting up the environment (Linux Operating System)](https://github.com/bhavsec/reconspider#setting-up-the-environment-linux-operating-system)
-8. [Setting up the environment (Windows Operating System)](https://github.com/bhavsec/reconspider#setting-up-the-environment-windows-operating-system)
+7. [Setting up the environment](https://github.com/bhavsec/reconspider#setting-up-the-environment)
+8. [Updating API Keys](https://github.com/bhavsec/reconspider#updating-api-keys)
 9. [Usage](https://github.com/bhavsec/reconspider#usage)
 10. [Contact](https://github.com/bhavsec/reconspider#contact)
 11. [Wiki & How-to Guide](https://github.com/bhavsec/reconspider#reconspider-full-wiki-and-how-to-guide)
@@ -54,7 +54,7 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 
 # Version (beta)
 
-  	ReconSpider   :     1.0.6
+  	ReconSpider   :     1.0.7
 
 
 # Overview of the tool:
@@ -68,9 +68,9 @@ A Web crawler, sometimes called a spider or spiderbot and often shortened to cra
 # Mind Map (v1)
 
 Check out our mind map to see visually organize information of this tool regarding api, services and techniques and more.
-```
+
 https://bhavsec.com/img/reconspider_map.png
-```
+
 
 
 # License Information
@@ -120,12 +120,12 @@ Installing and using ReconSpider is very easy. Installation process is very simp
 
 1. Downloading or cloning ReconSpider github repository.
 2. Installing all dependencies.
+3. Setting up the Database.
 
 Let's Begin !!
 
 
-
-### Setting up the environment (Linux Operating System)
+### Setting up the environment
 
 Step 1 - Cloning ReconSpider on your linux system.
 
@@ -150,36 +150,28 @@ cd reconspider
 sudo python3 setup.py install
 ```
 
-
-
-### Setting up the environment (Windows Operating System)
-
-Step 1 - Downloading ReconSpider on your windows system.
-
-In order to download ReconSpider from github repository simply copy and paste this URL in your favourite browser.
-```
-https://github.com/bhavsec/reconspider/archive/master.zip
-```
-
-Step 2 - Unzipping the file
-
-Once you download, you will find zipped file name as **datasploit-master.zip**. Just right click on that zipped file and unzip the file using any software like [WinZip](https://www.winzip.com/), [WinRAR](https://www.win-rar.com).
-
-
-Step 2 - Installing all dependencies.
-
-After unzipping, go to that directory using Command Prompt and type the following command.
-```
-python3 setup.py install
-```
-
-Step 3 - Database
+Step 3 - Setting up the Database.
 
 **IP2Proxy Database**
+
 ```
 https://lite.ip2location.com/database/px8-ip-proxytype-country-region-city-isp-domain-usagetype-asn-lastseen
 ```
-Download database, extract it and move to reconspider/plugins/ directory.
+Download database, extract it and move to `reconspider/plugins/` directory.
+
+
+# Updating API Keys
+
+APIs included in ReconSpider are FREE and having limited & restricted usage per month, Please update the current APIs with New APIs in `setup.py` file, and re-install once done to reflect the changes.
+
+> Warning: Not updating the APIs can result in not showing the expected output or it may show errors.
+
+You need to create the account and get the API Keys from the following websites.
+
+* Shodan.io - https://developer.shodan.io/api
+* NumVerify - https://numverify.com/documentation
+* IP Stack - https://ipstack.com/documentation
+* Google Maps - https://developers.google.com/maps/documentation/places/web-service/get-api-key
 
 
 # Usage
@@ -343,15 +335,12 @@ Please go through the [ReconSpider Wiki Guide](https://github.com/bhavsec/recons
 
 
 # Frequent & Seamless Updates
-ReconSpider is under heavy development and updates for fixing bugs. optimizing performance & new features are being rolled regularly. Custom error handling is also not implemented, and all the focus is to create required functionality.
-
-If you would like to see features and issues that are being worked on, you can do that on [Development Progress](https://github.com/bhavsec/reconspider/projects/1) project board.
+ReconSpider is under development and updates for fixing bugs. optimizing performance & new features are being rolled. Custom error handling is also not implemented, and all the focus is to create required functionality.
 
 
+# Special Thanks & Contributors
 
-# Special Thanks
-
+* [Aravindha](https://github.com/Aravindha1234u)
 * [Adithyan AK](https://github.com/adithyan-ak)
 * [S0md3v](https://github.com/s0md3v/)
 * [Parshant](mailto:parshant.dhall@gmail.com)
-

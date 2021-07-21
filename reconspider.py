@@ -37,11 +37,11 @@ if __name__ == '__main__':
                   print(banner())
                   from core import repl_prompt
            except ModuleNotFoundError:
-                  print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
+                  print('\nSeems like you haven\'t installed Requirements or You are not using python3 version, Please install using: python3 setup.py install')
                   quit()
     else:
            try:
                   from core import repl_prompt
            except ImportError:
-                  print('\nSeems like you haven\'t installed Requirements, Please install using: python setup.py install')
+                  print('\nSeems like you haven\'t installed Requirements or You are not using python3 version,, Please install using: python3 setup.py install')
                   quit()
