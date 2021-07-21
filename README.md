@@ -150,7 +150,7 @@ cd reconspider
 sudo python3 setup.py install
 ```
 
-Step 3 - Setting up the Database.
+Step 4 - Setting up the Database.
 
 **IP2Proxy Database**
 
