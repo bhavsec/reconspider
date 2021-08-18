@@ -194,7 +194,7 @@ def ScrapTweets(username):
         else:
             print("No. of parties he is Subscribed to --> Zero")
     except Exception as e:
-        print("No. of parties he is Subscribed to --> Zero" + + str(e))
+        print("No. of parties he is Subscribed to --> Zero" + str(e))
     print()
 
     #spana = soup.findAll('span', attrs={"class": "ProfileNav-value"})
