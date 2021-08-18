@@ -113,15 +113,17 @@ def ScrapTweets(username):
     soup = BeautifulSoup(page_html, 'html.parser')
 
     try:
-        full_name = soup.find('a', attrs={"class": "ProfileHeaderCard-nameLink u-textInheritColor js-nav"})
-        print("User Name --> " + full_name.text)
+        full_name = soup.find('a', attrs={"class": "css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0"})
+        full_name_text = full_name.text
+        print("User Name --> " + full_name_text)
     except Exception as e:
         print("User Name -->"+" Not Found" + str(e))
     print()
 
     try:
         user_id = soup.find('b', attrs={"class": "u-linkComplex-target"})
-        print("User Id --> " + user_id.text)
+        user_id_test = user_id.text
+        print("User Id --> " + user_id_text)
     except Exception as e:
         print("User Id --> "+"Not Found" + str(e))
     print()
