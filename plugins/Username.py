@@ -110,7 +110,6 @@ def ScrapTweets(username):
     
   auth = tweepy.OAuthHandler("f0rCnr7Tln5EnIqiD6JcuMIJ8", "DmwOASEbukzltfyZx66KQGbguORJkEqpZdGMNvbiefJoIeYvWl")
   auth.set_access_token("884691164900737025-nTLY2Z4KVMX4IS294Ap43hPxmDZrXSW", "oDo8dV8RgPaJpa6ifYFgp5F0K7huAb1rIhhUSl2p2ewxA")
-  username = "bhavsec"
   api = tweepy.API(auth)
   screen_name = username
   user = api.get_user(username)
