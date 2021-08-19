@@ -345,3 +345,4 @@ ReconSpider is under development and updates for fixing bugs. optimizing perform
 * [Adithyan AK](https://github.com/adithyan-ak)
 * [S0md3v](https://github.com/s0md3v/)
 * [Parshant](mailto:parshant.dhall@gmail.com)
+* [Ishan Batish](mailto:ishnabtsh@gmail.com)
