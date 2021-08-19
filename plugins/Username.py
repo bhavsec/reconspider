@@ -107,31 +107,95 @@ def Instagram(username):
         print("Error: Something Went Wrong")
 
 def ScrapTweets(username):
-    auth = tweepy.OAuthHandler("f0rCnr7Tln5EnIqiD6JcuMIJ8", "DmwOASEbukzltfyZx66KQGbguORJkEqpZdGMNvbiefJoIeYvWl")
-    auth.set_access_token("884691164900737025-nTLY2Z4KVMX4IS294Ap43hPxmDZrXSW", "oDo8dV8RgPaJpa6ifYFgp5F0K7huAb1rIhhUSl2p2ewxA")
-    api = tweepy.API(auth)
-    screen_name = username
-    user = api.get_user(screen_name)
     
-
-    try:
-       print("Full Name of the User is : " + user.screen_name)
-    except Exception as e:
-       print("User Name -->"+" Not Found" + str(e))
-    print()
-
-    try:
-      ID = user.id_str
-      print("The ID of the user is : " + ID)
-    except Exception as e:
-      print("User Id--> "+"Not Found" + str(e))
-    print()
-    
-    for friend in api.friends(screen_name):
-      print(friend.screen_name)
-
-    description = api.blocks_ids(screen_name)
-    print("This User is blocked by : " + str(description))
+  auth = tweepy.OAuthHandler("f0rCnr7Tln5EnIqiD6JcuMIJ8", "DmwOASEbukzltfyZx66KQGbguORJkEqpZdGMNvbiefJoIeYvWl")
+  auth.set_access_token("884691164900737025-nTLY2Z4KVMX4IS294Ap43hPxmDZrXSW", "oDo8dV8RgPaJpa6ifYFgp5F0K7huAb1rIhhUSl2p2ewxA")
+  api = tweepy.API(auth)
+  screen_name = username
+  user = api.get_user(username)
 
 
+  #User Name 
+  try:
+    print("The FullName of the user is : " + user.screen_name)
+  except Exception as e:
+    print("User Name -->"+" Not Found" + str(e))
+  print()
+
+   #User ID
+  try:
+        ID = user.id_str
+        print("The ID of the user is : " + ID)
+  except Exception as e:
+    print("User Id--> "+"Not Found" + str(e))
+  print()
+
+   #Description
+  try:
+     user = api.get_user(ID)
+     description = user.description
+
+     print("\nThe Description of the user is : "+ str(description))
+  except Exception as e:
+    print(" User Description is  : " + str(e))
+
+    #verify_credentials
+  try:
+      print("The Verification of the user is : ")
+      if api.verify_credentials() == False:
+        print("\n The user credentials are invalid.")
+      else:
+         print("The user credentials are valid.")
+  except Exception as e:
+     print("User verification is  : " + str(e))  
+
+    #Friends
+  try:
+      print("\n\n***** User Friends List is ****** " )
+      for friend in api.friends(screen_name):
+        print(friend.screen_name)
+  except Exception as e:
+      print("User has no friends" + str(e))
+  print()
+
+    #Followers
+  try:
+      print("***** User Follower list ******")
+      for follower in api.followers(screen_name):
+        print(follower.screen_name)
+  except Exception as e:
+    print("User Followers is  : " + str(e))   
+  print() 
+
+
+  #tweets
+  try:
+       number_of_tweets=200
+       tweets = api.user_timeline(screen_name)
+  
+       # Empty Array
+       tmp=[] 
+  
+       # create array of tweet information: username, 
+       # tweet id, date/time, text
+       tweets_for_csv = [tweet.text for tweet in tweets] # CSV file created 
+       for j in tweets_for_csv:
+  
+        # Appending tweets to the empty array tmp
+          tmp.append(j) 
+  
+   # Printing the tweets
+       print(''.join(tmp))
+
+  except Exception as e:
+       print("User Tweets" + str(e))
+  print()
+
+#Blocked
+  try:
+        block_list = api.blocks_ids(screen_name)
+        print("User Blocked List : ")
+        print(" ".join(block_list))
+  except Exception as e:
+        print("User Blocked is  : " + str(e))
 
