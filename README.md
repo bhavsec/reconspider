@@ -342,6 +342,7 @@ ReconSpider is under development and updates for fixing bugs. optimizing perform
 # Special Thanks & Contributors
 
 * [Aravindha](https://github.com/Aravindha1234u)
+* [Ishan Batish](https://www.linkedin.com/in/ishanbatish/)
 * [Adithyan AK](https://github.com/adithyan-ak)
 * [S0md3v](https://github.com/s0md3v/)
 * [Parshant](mailto:parshant.dhall@gmail.com)
