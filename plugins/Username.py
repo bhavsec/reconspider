@@ -110,11 +110,12 @@ def ScrapTweets(username):
     auth = tweepy.OAuthHandler("f0rCnr7Tln5EnIqiD6JcuMIJ8", "DmwOASEbukzltfyZx66KQGbguORJkEqpZdGMNvbiefJoIeYvWl")
     auth.set_access_token("884691164900737025-nTLY2Z4KVMX4IS294Ap43hPxmDZrXSW", "oDo8dV8RgPaJpa6ifYFgp5F0K7huAb1rIhhUSl2p2ewxA")
     api = tweepy.API(auth)
-
-    user = api.get_user(username)
+    screen_name = username
+    user = api.get_user(screen_name)
+    
 
     try:
-       print("Full Name of the User is :" + user.screen_name)
+       print("Full Name of the User is : " + user.screen_name)
     except Exception as e:
        print("User Name -->"+" Not Found" + str(e))
     print()
@@ -126,9 +127,9 @@ def ScrapTweets(username):
       print("User Id--> "+"Not Found" + str(e))
     print()
     
-    for friend in api.friends(username):
-      print(friend.username)
+    for friend in api.friends(screen_name):
+      print(friend.screen_name)
 
-    description = api.blocks_ids(username)
-    print(description)
+    description = api.blocks_ids(screen_name)
+    print("This User is blocked by : " + str(description))
 
