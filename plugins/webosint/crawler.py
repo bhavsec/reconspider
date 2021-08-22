@@ -147,7 +147,7 @@ def crawler(target,port):
 			total = set(total)
 			print('\n' + '[+]' + ' Total Links Extracted : '  + str(len(total)) + '\n')
 
-			if len(total) is not 0:
+			if len(total) != 0:
 				print('[+]' + ' Dumping Links in '  + '{}/dumps/{}'.format(path, file))
 				with open(path+'/dumps/{}'.format('{}.dump'.format(domain)), 'w') as dumpfile:
 					dumpfile.write('URL : {}'.format(target) + '\n\n')
@@ -165,31 +165,31 @@ def crawler(target,port):
 					dumpfile.write('\nTotal Links Found : ' + str(len(total)) + '\n')
 					print(str(e))
 
-					if len(r_total) is not 0:
+					if len(r_total) != 0:
 						dumpfile.write('\nrobots :\n\n')
 						for item in r_total:
 							dumpfile.write(str(item) + '\n')
-					if len(sm_total) is not 0:
+					if len(sm_total) != 0:
 						dumpfile.write('\nsitemap :\n\n')
 						for item in sm_total:
 							dumpfile.write(str(item) + '\n')
-					if len(css_total) is not 0:
+					if len(css_total) != 0:
 						dumpfile.write('\nCSS :\n\n')
 						for item in css_total:
 							dumpfile.write(str(item) + '\n')
-					if len(js_total) is not 0:
+					if len(js_total) != 0:
 						dumpfile.write('\nJavascript :\n\n')
 						for item in js_total:
 							dumpfile.write(str(item) + '\n')
-					if len(int_total) is not 0:
+					if len(int_total) != 0:
 						dumpfile.write('\nInternal Links :\n\n')
 						for item in int_total:
 							dumpfile.write(str(item) + '\n')
-					if len(ext_total) is not 0:
+					if len(ext_total) != 0:
 						dumpfile.write('\nExternal Links :\n\n')
 						for item in ext_total:
 							dumpfile.write(str(item) + '\n')
-					if len(img_total) is not 0:
+					if len(img_total) != 0:
 						dumpfile.write('\nImages :\n\n')
 						for item in img_total:
 							dumpfile.write(str(item) + '\n')
