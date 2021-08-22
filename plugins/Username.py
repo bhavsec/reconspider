@@ -86,7 +86,7 @@ def user(choice,username):
 
 def Instagram(username):
 
-    r = requests.get("https://www.instagram.com/"+ username +"/?__a=1")
+    r = requests.get("https://www.instagram.com/"+ username +"/?__a=1", headers = {'User-agent': 'your bot 0.1'})
     if r.status_code == 200:
         res = r.json()['graphql']['user']
         print("\nUsername: " + res['username'])
