@@ -1,3 +1,4 @@
+from plugins.api import twitterapis
 import requests
 from bs4 import BeautifulSoup
 import tweepy
@@ -107,7 +108,7 @@ def Instagram(username):
         print("Error: Something Went Wrong")
 
 def ScrapTweets(username):
-    auth = tweepy.OAuthHandler("f0rCnr7Tln5EnIqiD6JcuMIJ8", "DmwOASEbukzltfyZx66KQGbguORJkEqpZdGMNvbiefJoIeYvWl")
+    auth = tweepy.OAuthHandler(twitterapis())
     auth.set_access_token("884691164900737025-nTLY2Z4KVMX4IS294Ap43hPxmDZrXSW", "oDo8dV8RgPaJpa6ifYFgp5F0K7huAb1rIhhUSl2p2ewxA")
     api = tweepy.API(auth)
     screen_name = username

@@ -7,3 +7,6 @@ def ipstack():
 def gmap():
     api="AIzaSyAKGik6Fok3_mbIsgquaAnDGNy-h_AjhVw"
     return str(api)
+def twitterapis():
+    api= "\"f0rCnr7Tln5EnIqiD6JcuMIJ8\", \"DmwOASEbukzltfyZx66KQGbguORJkEqpZdGMNvbiefJoIeYvWl\""
+    return str(api)
