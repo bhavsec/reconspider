@@ -114,9 +114,9 @@ def repl():  # Read–eval–print loop
 
         elif choice == 11:
             while 1:
-                print("\n1.Facebook \n2.Twitter \n3.Instagram\n")
-                username = input("Username >> ")
+                print("\n1.Facebook \n2.Twitter \n3.Instagram\n4.Github")
                 choice = input("choice >> ")
+                username = input("Username >> ")
                 break
             user(choice,username)
             continue

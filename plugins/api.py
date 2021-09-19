@@ -1,9 +1,9 @@
 def phoneapis():
-    api= "e01791e4d18fbbdfa0c9033bf207decd,2f8c8e865a0b25bbf4da08c4db039b8d"
+    api= "ecf584dd7bccdf2c152fdf3f5595ba20"
     return str(api)
 def ipstack():
-    api="276cfee2c31729505691e515e8321a02"
+    api="406792616a740641c6a0588a0ee1c509"
     return str(api)
 def gmap():
-    api="AIzaSyAKGik6Fok3_mbIsgquaAnDGNy-h_AjhVw"
+    api="AIzaSyBY9Rfnjo3UWHddicUrwHCHY37OoqxI478"
     return str(api)
