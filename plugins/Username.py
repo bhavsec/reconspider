@@ -13,6 +13,9 @@ def user(choice,username):
     elif choice == '3':
         Instagram(username)
         return()
+    elif choice == '4':
+        Github(username)
+        return()
     else:
         exit()
 
@@ -133,5 +136,10 @@ def ScrapTweets(username):
     description = api.blocks_ids(screen_name)
     print("This User is blocked by : " + str(description))
 
-
-
+def Github(username):
+    try:
+        Response = requests.get("https://api.github.com/users/ishanbatish")
+        print(Response.text)
+    except Exception as e:
+        print("User Not found" + str(e))
+    print()
