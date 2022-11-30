@@ -48,7 +48,7 @@ def repl():  # Read–eval–print loop
                 try:
                     if port == "":
                         port=80
-                    elif port not in [80,443]:
+                    elif int(port) not in [80,443]:
                         print("Invalid port - Available(80,443)")
                         continue
                 except ValueError:

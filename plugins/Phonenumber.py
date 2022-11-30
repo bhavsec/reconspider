@@ -5,7 +5,7 @@ def Phonenumber(ph):
 		print ('[+]' + ' Fetching Phonenumber Details...' + '\n')
 		apikey=phoneapis()
 		if apikey == "":
-				print("Add you phoneapis api key to src/api.py")
+				print("Add NumVerify api key to plugins/api.py")
 				exit()
 		ph=''.join([i for i in ph if i.isdigit()])
 		for api_key in apikey.split(","):

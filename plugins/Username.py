@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import tweepy
 
 out=[]
 
@@ -106,101 +107,31 @@ def Instagram(username):
         print("Error: Something Went Wrong")
 
 def ScrapTweets(username):
-
-    link = "https://twitter.com/" + username
-
-    page_html=requests.get(link).content
-    soup = BeautifulSoup(page_html, 'html.parser')
+    auth = tweepy.OAuthHandler("f0rCnr7Tln5EnIqiD6JcuMIJ8", "DmwOASEbukzltfyZx66KQGbguORJkEqpZdGMNvbiefJoIeYvWl")
+    auth.set_access_token("884691164900737025-nTLY2Z4KVMX4IS294Ap43hPxmDZrXSW", "oDo8dV8RgPaJpa6ifYFgp5F0K7huAb1rIhhUSl2p2ewxA")
+    api = tweepy.API(auth)
+    screen_name = username
+    user = api.get_user(screen_name)
+    
 
     try:
-        full_name = soup.find('a', attrs={"class": "ProfileHeaderCard-nameLink u-textInheritColor js-nav"})
-        print("User Name --> " + full_name.text)
+       print("Full Name of the User is : " + user.screen_name)
     except Exception as e:
-        print("User Name -->"+" Not Found" + str(e))
+       print("User Name -->"+" Not Found" + str(e))
     print()
 
     try:
-        user_id = soup.find('b', attrs={"class": "u-linkComplex-target"})
-        print("User Id --> " + user_id.text)
+      ID = user.id_str
+      print("The ID of the user is : " + ID)
     except Exception as e:
-        print("User Id --> "+"Not Found" + str(e))
+      print("User Id--> "+"Not Found" + str(e))
     print()
+    
+    for friend in api.friends(screen_name):
+      print(friend.screen_name)
 
-    try:
-        decription = soup.find('p', attrs={"class": "ProfileHeaderCard-bio u-dir"})
-        print("Description --> " + decription.text)
-    except Exception as e:
-        print("Decription not provided by the user" + str(e))
-    print()
+    description = api.blocks_ids(screen_name)
+    print("This User is blocked by : " + str(description))
 
-    try:
-        user_location = soup.find('span', attrs={"class": "ProfileHeaderCard-locationText u-dir"})
-        print("Location -->  " + user_location.text.strip())
-    except Exception as e:
-        print("Location not provided by the user" + str(e))
-    print()
 
-    try:
-        connectivity = soup.find('span', attrs={"class": "ProfileHeaderCard-urlText u-dir"})
-        tittle = connectivity.a["title"]
-        print("Link provided by the user --> " + tittle)
-    except Exception as e:
-        print("No contact link is provided by the user" + str(e))
-    print()
 
-    try:
-        join_date = soup.find('span', attrs={"class": "ProfileHeaderCard-joinDateText js-tooltip u-dir"})
-        print("The user joined twitter on --> " + join_date.text)
-    except Exception as e:
-        print("The joined date is not provided by the user" + str(e))
-    print()
-
-    try:
-        birth = soup.find('span', attrs={"class": "ProfileHeaderCard-birthdateText u-dir"})
-        birth_date = birth.span.text
-        print("Date of Birth:"+birth_date.strip())
-    except Exception as e:
-        print("Birth Date not provided by the user" + str(e))
-    print()
-
-    try:
-        span_box = soup.findAll('span', attrs={"class": "ProfileNav-value"})
-        print("Total tweets --> " + span_box[0].text)
-    except Exception as e:
-        print("Total Tweets --> Zero" + str(e))
-    print()
-
-    try:
-        print("Following --> " +span_box[1].text)
-    except Exception as e:
-        print("Following --> Zero" + str(e))
-    print()
-
-    try:
-        print("Followers --> " + span_box[2].text)
-    except Exception as e:
-        print("Followers --> Zero" + str(e))
-    print()
-
-    try:
-        print("Likes send by him --> " + span_box[3].text)
-    except Exception as e:
-        print("Likes send by him --> Zero" + str(e))
-    print()
-
-    try:
-        if span_box[4].text != "More ":
-            print("No. of parties he is Subscribed to --> " + span_box[4].text)
-        else:
-            print("No. of parties he is Subscribed to --> Zero")
-    except Exception as e:
-        print("No. of parties he is Subscribed to --> Zero" + + str(e))
-    print()
-
-    #spana = soup.findAll('span', attrs={"class": "ProfileNav-value"})
-
-    print("Tweets by "+ username + " are --> ")
-    # TweetTextSize TweetTextSize--normal js-tweet-text tweet-text
-    for tweets in soup.findAll('p', attrs={"class": "TweetTextSize TweetTextSize--normal js-tweet-text tweet-text"}):
-        print(tweets.text)
-        print()

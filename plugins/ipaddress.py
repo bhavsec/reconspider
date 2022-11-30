@@ -9,10 +9,10 @@ from plugins.webosint.who.whois import *
 
 api_key = ipstack()
 if api_key == "" :
-    print("Add you ipstack api key to src/api.py")
+    print("Add you ipstack api key to plugins/api.py")
     exit()
 if gmap() == "" :
-    print("Add you Google Heatmap api key to src/api.py")
+    print("Add you Google Heatmap api key to plugins/api.py")
     exit()
 
 def IPHeatmap():

@@ -27,7 +27,7 @@ def ip2Proxy(IP):
             print("Name:" + record['as_name'])
             api_key = ipstack()
             if api_key == "":
-                print("Add you ipstack api key to src/api.py")
+                print("Add you ipstack api key to plugins/api.py")
                 exit()
             r = requests.get("http://api.IPstack.com/" + IP + "?access_key=" + api_key)
             response = r.json()
