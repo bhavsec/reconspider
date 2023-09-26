@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 import os
 import pip
 
@@ -34,7 +34,7 @@ setup(
     author="BhavKaran (bhavsec.com)",
     author_email="bhavsec@gmail.com",
     license="GPL-3.0",
-    install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","nmap","pythonping","whois","gmplot","pillow","lxml","tweepy"],
+    install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","python-nmap","pythonping","whois","gmplot","pillow","lxml","tweepy"],
     console=["reconspider.py"],
 )
 
