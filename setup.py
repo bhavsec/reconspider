@@ -8,7 +8,7 @@ fout = open("core/config.py", "w")
 fout.write("shodan_api = " + '"' + "e9SxSRCE1xDNS4CzyWzOQTUoE55KB9HX" + '"' + "\n")
 fout.close()
 
-fout = open("plugins/api.py", "w")
+fout = open("core/plugins/api.py", "w")
 
 # NumVerify API (https://numverify.com/documentation)
 fout.write("def phoneapis():"+ "\n")
@@ -34,7 +34,7 @@ setup(
     author="BhavKaran (bhavsec.com)",
     author_email="bhavsec@gmail.com",
     license="GPL-3.0",
-    install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","nmap","pythonping","whois","gmplot","pillow","lxml","tweepy"],
+    install_requires=["shodan", "requests", "prompt_toolkit","wget","beautifulsoup4","click","urllib3","IP2proxy","wget","paramiko","h8mail","python-nmap","pythonping","whois","gmplot","pillow","lxml","tweepy"],
     console=["reconspider.py"],
 )
 
@@ -48,7 +48,7 @@ except Exception as e:
 # ip2 Location Database (https://lite.ip2location.com/database/px8-ip-proxytype-country-region-city-isp-domain-usagetype-asn-lastseen?lang=en_US)
 url="https://www.ip2location.com/download?token=hg5uYe2Jvri4R7P1j8b71Pk8dnvIU2M6A9jz2tvcVtGx8ZK2UPQgzr6Hk3cV68oH&file=PX8LITEBIN"
 print('\nDownloading IP2PROXY-IP-PROXYTYPE-COUNTRY-REGION-CITY-ISP-DOMAIN-USAGETYPE-ASN-LASTSEEN.BIN...')
-filepath=os.getcwd()+"/plugins/"
+filepath=os.getcwd()+"/core/plugins/"
 wget.download(url,out=filepath)
 print('\nDownload Finished')
 
