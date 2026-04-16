@@ -14,7 +14,7 @@ def shodan_host(IP):
         print("Organization --> " + str(host['org']))
         print("ISP -----------> " + str(host['isp']))
         print("Open ports ----> " + str(host['ports']))
-    except:
+    except Exception:
         print("Unavailable")
 
 
@@ -28,5 +28,5 @@ def shodan_ip(IP):
         print("Organization --> " + str(host['org']))
         print("ISP -----------> " + str(host['isp']))
         print("Open ports ----> " + str(host['ports']))
-    except:
+    except Exception:
         print("Unavailable")
