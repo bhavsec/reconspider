@@ -11,7 +11,7 @@ def Phonenumber(ph):
 		for api_key in apikey.split(","):
 			url = ("http://apilayer.net/api/validate?access_key="+api_key+"&number="+str(ph))
 			try:
-				response=requests.get(url)
+				response=requests.get(url, timeout=30)
 				if 'error' in response.json().keys():
 					continue
 				elif response.json()['valid']==False:
@@ -27,7 +27,6 @@ def Phonenumber(ph):
 					print("Carrier: "+get['carrier'])
 					print("")
 					return 
-			except:
+			except Exception:
 				continue
 		print(str(response.json()['error']['info']).split(".")[0])
-				
